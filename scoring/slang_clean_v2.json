@@ -13597,5 +13597,1000 @@
     ],
     "era": "universal",
     "type": "slang"
+  },
+  "первокур": {
+    "group": "молодёжный",
+    "definition": "первокурсник, студент первого курса",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "перваш",
+      "новенький"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "курсач": {
+    "group": "молодёжный",
+    "definition": "курсовая работа",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "курсовик"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "лаба": {
+    "group": "молодёжный",
+    "definition": "лабораторная работа",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "лабораторка"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "контроша": {
+    "group": "молодёжный",
+    "definition": "контрольная работа",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "контрольная"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "самост": {
+    "group": "молодёжный",
+    "definition": "самостоятельная работа в классе",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "самостоятельная"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "инфа": {
+    "group": "молодёжный",
+    "definition": "информатика, учебный предмет",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "информатика"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "матеша": {
+    "group": "молодёжный",
+    "definition": "математика, учебный предмет",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "математика"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "матан": {
+    "group": "молодёжный",
+    "definition": "математический анализ в вузе",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "матанализ"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "вышка": {
+    "group": "молодёжный",
+    "definition": "высшая математика в вузе",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "матан"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "литра": {
+    "group": "молодёжный",
+    "definition": "литература, учебный предмет",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "литература"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "русиш": {
+    "group": "молодёжный",
+    "definition": "русский язык, учебный предмет",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "русский"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "англиш": {
+    "group": "молодёжный",
+    "definition": "английский язык, учебный предмет",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "инглиш"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "немка": {
+    "group": "молодёжный",
+    "definition": "немецкий язык; учительница немецкого",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "немецкий"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "физра": {
+    "group": "молодёжный",
+    "definition": "физкультура, учебный предмет",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "физкультура"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "обж": {
+    "group": "молодёжный",
+    "definition": "предмет «Основы безопасности жизнедеятельности»",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "безопасность"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "изо": {
+    "group": "молодёжный",
+    "definition": "изобразительное искусство, школьный предмет",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "рисование"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "общество": {
+    "group": "молодёжный",
+    "definition": "обществознание, школьный предмет",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "обществознание"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "классуха": {
+    "group": "молодёжный",
+    "definition": "классная руководительница",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "классная"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "класрук": {
+    "group": "молодёжный",
+    "definition": "классный руководитель",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "классный"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "физрук": {
+    "group": "молодёжный",
+    "definition": "учитель физкультуры",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "физкультурник"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "трудовик": {
+    "group": "молодёжный",
+    "definition": "учитель труда, технологии",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "технолог"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "математичка": {
+    "group": "молодёжный",
+    "definition": "учительница математики",
+    "pos": "сущ.",
+    "syllables": 5,
+    "synonyms": [
+      "математик"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "физичка": {
+    "group": "молодёжный",
+    "definition": "учительница физики",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "физик"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "химичка": {
+    "group": "молодёжный",
+    "definition": "учительница химии",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "химик"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "англичанка": {
+    "group": "молодёжный",
+    "definition": "учительница английского языка",
+    "pos": "сущ.",
+    "syllables": 4,
+    "synonyms": [
+      "английская"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "русичка": {
+    "group": "молодёжный",
+    "definition": "учительница русского языка",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "русский"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "информатичка": {
+    "group": "молодёжный",
+    "definition": "учительница информатики",
+    "pos": "сущ.",
+    "syllables": 5,
+    "synonyms": [
+      "информатик"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "преп": {
+    "group": "молодёжный",
+    "definition": "преподаватель, учитель",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "учитель"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "научрук": {
+    "group": "молодёжный",
+    "definition": "научный руководитель",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "руководитель"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "инст": {
+    "group": "молодёжный",
+    "definition": "институт, вуз",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "вуз",
+      "университет"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "шарага": {
+    "group": "молодёжный",
+    "definition": "непрестижное учебное заведение, ПТУ или техникум",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "птушка"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "птушка": {
+    "group": "молодёжный",
+    "definition": "ПТУ, профессиональное училище",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "шарага"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "академка": {
+    "group": "молодёжный",
+    "definition": "академический отпуск",
+    "pos": "сущ.",
+    "syllables": 4,
+    "synonyms": [
+      "академ"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "военка": {
+    "group": "молодёжный",
+    "definition": "военная кафедра, военная подготовка в вузе",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "кафедра"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "окно": {
+    "group": "молодёжный",
+    "definition": "свободное время между парами в расписании",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "перерыв"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "автомат": {
+    "group": "молодёжный",
+    "definition": "оценка, полученная без сдачи экзамена",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "автозачёт"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "бомба": {
+    "group": "молодёжный",
+    "definition": "заранее написанная шпаргалка",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "шпаргалка"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "гармошка": {
+    "group": "молодёжный",
+    "definition": "шпаргалка, сложенная гармошкой",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "шпаргалка"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "пересд": {
+    "group": "молодёжный",
+    "definition": "пересдача экзамена",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "пересдача"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "долг": {
+    "group": "молодёжный",
+    "definition": "несданный экзамен, задолженность по учёбе",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "задолженность"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "завал": {
+    "group": "молодёжный",
+    "definition": "провал на экзамене",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "провал"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "двояк": {
+    "group": "молодёжный",
+    "definition": "оценка «два»",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "двойка"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "трояк": {
+    "group": "молодёжный",
+    "definition": "оценка «три»",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "тройка"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "экз": {
+    "group": "молодёжный",
+    "definition": "экзамен",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "экзамен"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "стипа": {
+    "group": "молодёжный",
+    "definition": "стипендия",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "стипендия"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "повышенка": {
+    "group": "молодёжный",
+    "definition": "повышенная стипендия",
+    "pos": "сущ.",
+    "syllables": 4,
+    "synonyms": [
+      "стипендия"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "социалка": {
+    "group": "молодёжный",
+    "definition": "социальная стипендия",
+    "pos": "сущ.",
+    "syllables": 4,
+    "synonyms": [
+      "соцстипендия"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "бюджетник": {
+    "group": "молодёжный",
+    "definition": "студент, обучающийся за счёт бюджета",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "бюджетный"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "платник": {
+    "group": "молодёжный",
+    "definition": "студент, обучающийся платно",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "коммерческий"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "ботан": {
+    "group": "молодёжный",
+    "definition": "зубрила, слишком старательный ученик (иронично)",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "ботаник",
+      "зубрила"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "зубрила": {
+    "group": "молодёжный",
+    "definition": "человек, который много и механически заучивает",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "ботан"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "задрот": {
+    "group": "молодёжный",
+    "definition": "человек, фанатично погружённый в учёбу или дело",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "ботан"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "школота": {
+    "group": "молодёжный",
+    "definition": "школьники (пренебрежительно)",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "школьники"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "продлёнка": {
+    "group": "молодёжный",
+    "definition": "группа продлённого дня в школе",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "группа"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "халтура": {
+    "group": "молодёжный",
+    "definition": "побочная подработка, случайный заработок",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "подработка"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "халтурщик": {
+    "group": "молодёжный",
+    "definition": "человек, занимающийся халтурой, подработкой",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "шабашник"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "шабашник": {
+    "group": "молодёжный",
+    "definition": "человек, работающий на временных подработках",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "халтурщик"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "калым": {
+    "group": "молодёжный",
+    "definition": "побочный заработок, приработок",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "шабашка"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "калымщик": {
+    "group": "молодёжный",
+    "definition": "тот, кто ищет случайный заработок",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "халтурщик"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "левак": {
+    "group": "молодёжный",
+    "definition": "неофициальный приработок, заработок на стороне",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "халтура"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "навар": {
+    "group": "молодёжный",
+    "definition": "прибыль, финансовая выгода",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "прибыль",
+      "профит"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "профит": {
+    "group": "молодёжный",
+    "definition": "выгода, прибыль",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "навар"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "нал": {
+    "group": "молодёжный",
+    "definition": "наличные деньги",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "наличка"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "безнал": {
+    "group": "молодёжный",
+    "definition": "безналичный расчёт, деньги на карте",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "карта"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "зарплатка": {
+    "group": "молодёжный",
+    "definition": "заработная плата",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "зарплата",
+      "получка"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "получка": {
+    "group": "молодёжный",
+    "definition": "зарплата, выдача денег за работу",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "зарплата"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "почасовка": {
+    "group": "молодёжный",
+    "definition": "почасовая оплата труда",
+    "pos": "сущ.",
+    "syllables": 4,
+    "synonyms": [
+      "оплата"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "сверхурочка": {
+    "group": "молодёжный",
+    "definition": "сверхурочная работа",
+    "pos": "сущ.",
+    "syllables": 4,
+    "synonyms": [
+      "переработка"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "пятидневка": {
+    "group": "молодёжный",
+    "definition": "пятидневная рабочая неделя",
+    "pos": "сущ.",
+    "syllables": 4,
+    "synonyms": [
+      "неделя"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "созвон": {
+    "group": "молодёжный",
+    "definition": "телефонный разговор, звонок по работе",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "звонок"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "тестовое": {
+    "group": "молодёжный",
+    "definition": "тестовое задание при приёме на работу",
+    "pos": "сущ.",
+    "syllables": 4,
+    "synonyms": [
+      "задание"
+    ],
+    "era": "2020s",
+    "type": "slang"
+  },
+  "пробник": {
+    "group": "молодёжный",
+    "definition": "пробное задание либо пробный день на работе",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "тестовое"
+    ],
+    "era": "2020s",
+    "type": "slang"
+  },
+  "оффер": {
+    "group": "молодёжный",
+    "definition": "официальное предложение о работе",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "предложение"
+    ],
+    "era": "2020s",
+    "type": "slang"
+  },
+  "джун": {
+    "group": "молодёжный",
+    "definition": "начинающий специалист (от junior)",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "джуниор"
+    ],
+    "era": "2020s",
+    "type": "slang"
+  },
+  "айтишник": {
+    "group": "молодёжный",
+    "definition": "работник IT-сферы",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "программист"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "сисадмин": {
+    "group": "молодёжный",
+    "definition": "системный администратор",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "админ"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "кодер": {
+    "group": "молодёжный",
+    "definition": "программист, пишущий код",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "программист"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "фрилансер": {
+    "group": "молодёжный",
+    "definition": "человек, работающий удалённо на заказ",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "удалёнщик"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "бариста": {
+    "group": "молодёжный",
+    "definition": "специалист по приготовлению кофе",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "кофейщик"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "доставщик": {
+    "group": "молодёжный",
+    "definition": "курьер службы доставки",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "курьер"
+    ],
+    "era": "2020s",
+    "type": "slang"
+  },
+  "манагер": {
+    "group": "молодёжный",
+    "definition": "менеджер (иронично)",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "менеджер"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "долбить": {
+    "group": "молодёжный",
+    "definition": "упорно учить, зубрить материал",
+    "pos": "глаг.",
+    "syllables": 2,
+    "synonyms": [
+      "зубрить"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "сдуть": {
+    "group": "молодёжный",
+    "definition": "списать у кого-либо",
+    "pos": "глаг.",
+    "syllables": 1,
+    "synonyms": [
+      "списать"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "скатать": {
+    "group": "молодёжный",
+    "definition": "списать, скопировать чужую работу",
+    "pos": "глаг.",
+    "syllables": 2,
+    "synonyms": [
+      "сдуть"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "завалить": {
+    "group": "молодёжный",
+    "definition": "провалить экзамен",
+    "pos": "глаг.",
+    "syllables": 3,
+    "synonyms": [
+      "провалить"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "вылететь": {
+    "group": "молодёжный",
+    "definition": "быть отчисленным из учебного заведения",
+    "pos": "глаг.",
+    "syllables": 3,
+    "synonyms": [
+      "отчислиться"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "зырить": {
+    "group": "молодёжный",
+    "definition": "подглядывать, следить (например, за шпаргалкой)",
+    "pos": "глаг.",
+    "syllables": 2,
+    "synonyms": [
+      "подглядывать"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "халтурить": {
+    "group": "молодёжный",
+    "definition": "подрабатывать на стороне",
+    "pos": "глаг.",
+    "syllables": 3,
+    "synonyms": [
+      "шабашить"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "шабашить": {
+    "group": "молодёжный",
+    "definition": "работать на временной подработке",
+    "pos": "глаг.",
+    "syllables": 3,
+    "synonyms": [
+      "халтурить"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "калымить": {
+    "group": "молодёжный",
+    "definition": "подрабатывать, искать приработок",
+    "pos": "глаг.",
+    "syllables": 3,
+    "synonyms": [
+      "халтурить"
+    ],
+    "era": "2000s",
+    "type": "slang"
   }
 }
