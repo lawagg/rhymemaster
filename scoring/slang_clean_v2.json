@@ -12940,5 +12940,662 @@
     ],
     "era": "universal",
     "type": "slang"
+  },
+  "нарик": {
+    "group": "нарк",
+    "definition": "наркоман, человек, регулярно употребляющий наркотики",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "торчок",
+      "наркоман"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "торчок": {
+    "group": "нарк",
+    "definition": "наркоман, зависимый от наркотиков",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "нарик",
+      "наркоман"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "ширяться": {
+    "group": "нарк",
+    "definition": "вводить себе наркотик внутривенно",
+    "pos": "verb",
+    "syllables": 3,
+    "synonyms": [
+      "вмазаться",
+      "уколоться"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "ширево": {
+    "group": "нарк",
+    "definition": "приготовленный в домашних условиях раствор наркотика для инъекций",
+    "pos": "noun",
+    "syllables": 3,
+    "synonyms": [
+      "раствор"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "вмазаться": {
+    "group": "нарк",
+    "definition": "сделать себе инъекцию наркотика",
+    "pos": "verb",
+    "syllables": 3,
+    "synonyms": [
+      "ширнуться",
+      "уколоться"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "вмазка": {
+    "group": "нарк",
+    "definition": "инъекция наркотика, разовая доза для введения",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "укол",
+      "инъекция"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "ширнуться": {
+    "group": "нарк",
+    "definition": "сделать разовую инъекцию наркотика",
+    "pos": "verb",
+    "syllables": 3,
+    "synonyms": [
+      "вмазаться",
+      "уколоться"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "кайфолом": {
+    "group": "нарк",
+    "definition": "обстоятельство или человек, портящие состояние эйфории",
+    "pos": "noun",
+    "syllables": 3,
+    "synonyms": [
+      "облом"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "передоз": {
+    "group": "нарк",
+    "definition": "передозировка наркотика, опасное превышение дозы",
+    "pos": "noun",
+    "syllables": 3,
+    "synonyms": [
+      "передозировка"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "глючить": {
+    "group": "нарк",
+    "definition": "вызывать зрительные или слуховые галлюцинации (о наркотике)",
+    "pos": "verb",
+    "syllables": 2,
+    "synonyms": [
+      "пробивать",
+      "вести"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "сушняк": {
+    "group": "нарк",
+    "definition": "сухость во рту и жажда после курения марихуаны; отсутствие наркотика",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "сухость"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "толкач": {
+    "group": "нарк",
+    "definition": "распространитель наркотиков",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "барыга"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "кладмен": {
+    "group": "нарк",
+    "definition": "человек, прячущий закладки с наркотиками в тайные места",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "закладчик"
+    ],
+    "era": "2020s",
+    "type": "slang"
+  },
+  "закладчик": {
+    "group": "нарк",
+    "definition": "тот, кто делает тайные закладки с наркотиками",
+    "pos": "noun",
+    "syllables": 3,
+    "synonyms": [
+      "кладмен"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "дроппер": {
+    "group": "нарк",
+    "definition": "подставное лицо в схеме сбыта наркотиков, получающее деньги или посылки",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2020s",
+    "type": "slang"
+  },
+  "подсадка": {
+    "group": "нарк",
+    "definition": "формирование зависимости, привыкание к наркотику",
+    "pos": "noun",
+    "syllables": 3,
+    "synonyms": [
+      "зависимость"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "кокс": {
+    "group": "нарк",
+    "definition": "кокаин",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "кока",
+      "снег"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "кока": {
+    "group": "нарк",
+    "definition": "кокаин",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "кокс",
+      "снег"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "снег": {
+    "group": "нарк",
+    "definition": "кокаин (по белому цвету порошка)",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "кокс",
+      "снежок"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "снежок": {
+    "group": "нарк",
+    "definition": "кокаин",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "кокс",
+      "снег"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "крэк": {
+    "group": "нарк",
+    "definition": "крэк-кокаин, наркотик для курения",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "кокаин"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "кета": {
+    "group": "нарк",
+    "definition": "кетамин, диссоциативный анестетик, употребляемый как наркотик",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "кетамин"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "фен": {
+    "group": "нарк",
+    "definition": "амфетамин, стимулирующий наркотик",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "амф",
+      "спиды"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "амф": {
+    "group": "нарк",
+    "definition": "сокращённое название амфетамина",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "фен"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "спиды": {
+    "group": "нарк",
+    "definition": "амфетамины, психостимуляторы",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "фен",
+      "амф"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "мет": {
+    "group": "нарк",
+    "definition": "метамфетамин",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "лёд"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "лёд": {
+    "group": "нарк",
+    "definition": "кристаллический метамфетамин",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "мет"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "герыч": {
+    "group": "нарк",
+    "definition": "героин",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "героинчик",
+      "героин"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "героинчик": {
+    "group": "нарк",
+    "definition": "героин (уменьшительно-ласкательное)",
+    "pos": "noun",
+    "syllables": 4,
+    "synonyms": [
+      "герыч"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "крокодил": {
+    "group": "нарк",
+    "definition": "дезоморфин, кустарно приготовленный опиоидный наркотик",
+    "pos": "noun",
+    "syllables": 3,
+    "synonyms": [
+      "дезоморфин"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "кислота": {
+    "group": "нарк",
+    "definition": "ЛСД, галлюциногенный наркотик",
+    "pos": "noun",
+    "syllables": 3,
+    "synonyms": [
+      "ЛСД"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "марка": {
+    "group": "нарк",
+    "definition": "промокнутая бумажка с ЛСД для перорального приёма",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "промокашка"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "промокашка": {
+    "group": "нарк",
+    "definition": "блоттер с ЛСД, пропитанная бумага",
+    "pos": "noun",
+    "syllables": 4,
+    "synonyms": [
+      "марка"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "дурь": {
+    "group": "нарк",
+    "definition": "наркотик вообще, чаще о марихуане",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "наркота",
+      "стафф"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "спайс": {
+    "group": "нарк",
+    "definition": "синтетический курительный каннабиноид",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "химия"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "мяу": {
+    "group": "нарк",
+    "definition": "мефедрон, синтетический стимулятор",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "мефедрон"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "соли": {
+    "group": "нарк",
+    "definition": "синтетические катиноны, стимулирующие наркотики",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "катиноны"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "экстази": {
+    "group": "нарк",
+    "definition": "таблетка МДМА, психостимулирующий наркотик",
+    "pos": "noun",
+    "syllables": 3,
+    "synonyms": [
+      "экзик"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "экзик": {
+    "group": "нарк",
+    "definition": "таблетка экстази",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "экстази"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "колёса": {
+    "group": "нарк",
+    "definition": "наркотические таблетки",
+    "pos": "noun",
+    "syllables": 3,
+    "synonyms": [
+      "таблы"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "таблы": {
+    "group": "нарк",
+    "definition": "наркотические таблетки (от англ. tabs)",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "колёса"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "бошки": {
+    "group": "нарк",
+    "definition": "соцветия конопли, пригодные для курения",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "шишки"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "шишки": {
+    "group": "нарк",
+    "definition": "соцветия конопли с максимальным содержанием действующего вещества",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "бошки"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "план": {
+    "group": "нарк",
+    "definition": "марихуана",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "планушка",
+      "травка"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "планушка": {
+    "group": "нарк",
+    "definition": "марихуана",
+    "pos": "noun",
+    "syllables": 3,
+    "synonyms": [
+      "план",
+      "травка"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "анаша": {
+    "group": "нарк",
+    "definition": "марихуана или гашиш",
+    "pos": "noun",
+    "syllables": 3,
+    "synonyms": [
+      "гаш",
+      "план"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "гаш": {
+    "group": "нарк",
+    "definition": "гашиш, прессованная смола конопли",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "анаша"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "ганжа": {
+    "group": "нарк",
+    "definition": "марихуана",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "план",
+      "травка"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "травка": {
+    "group": "нарк",
+    "definition": "марихуана",
+    "pos": "noun",
+    "syllables": 2,
+    "synonyms": [
+      "план",
+      "ганжа"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "джойнт": {
+    "group": "нарк",
+    "definition": "самокрутка с марихуаной",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "самокрутка"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "блант": {
+    "group": "нарк",
+    "definition": "сигара, начинённая марихуаной",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "джойнт"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "бонг": {
+    "group": "нарк",
+    "definition": "приспособление для курения с водяным фильтром",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "бульбулятор"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "бульбулятор": {
+    "group": "нарк",
+    "definition": "самодельный бонг, курительное приспособление",
+    "pos": "noun",
+    "syllables": 4,
+    "synonyms": [
+      "бонг"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "палёный": {
+    "group": "нарк",
+    "definition": "поддельный, разбавленный, некачественный (о наркотике)",
+    "pos": "adjective",
+    "syllables": 3,
+    "synonyms": [
+      "поддельный"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "бадяга": {
+    "group": "нарк",
+    "definition": "некачественный, сильно разбавленный наркотик",
+    "pos": "noun",
+    "syllables": 3,
+    "synonyms": [
+      "контрафакт"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "бадяжить": {
+    "group": "нарк",
+    "definition": "разбавлять наркотик посторонними веществами, портить качество",
+    "pos": "verb",
+    "syllables": 3,
+    "synonyms": [
+      "разбавлять"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "стафф": {
+    "group": "нарк",
+    "definition": "наркотик, партия наркотика (от англ. stuff)",
+    "pos": "noun",
+    "syllables": 1,
+    "synonyms": [
+      "дурь",
+      "наркота"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "укурок": {
+    "group": "нарк",
+    "definition": "человек в состоянии опьянения от марихуаны; заядлый курильщик",
+    "pos": "noun",
+    "syllables": 3,
+    "synonyms": [
+      "обкуренный"
+    ],
+    "era": "universal",
+    "type": "slang"
   }
 }
