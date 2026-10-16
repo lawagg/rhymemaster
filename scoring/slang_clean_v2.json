@@ -11221,5 +11221,817 @@
     ],
     "era": "2010s",
     "type": "slang"
+  },
+  "аниме": {
+    "group": "аниме",
+    "definition": "японская анимация",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "мультик"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "анимешник": {
+    "group": "аниме",
+    "definition": "фанат аниме",
+    "pos": "сущ.",
+    "syllables": 4,
+    "synonyms": [
+      "фанат"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "анимешница": {
+    "group": "аниме",
+    "definition": "девушка-фанатка аниме",
+    "pos": "сущ.",
+    "syllables": 5,
+    "synonyms": [
+      "фанатка"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "анимешный": {
+    "group": "аниме",
+    "definition": "относящийся к аниме",
+    "pos": "прил.",
+    "syllables": 4,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "манга": {
+    "group": "аниме",
+    "definition": "японские комиксы",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "комикс"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "мангака": {
+    "group": "аниме",
+    "definition": "автор манги",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "professional"
+  },
+  "ранобэ": {
+    "group": "аниме",
+    "definition": "японские лёгкие романы с иллюстрациями",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "роман"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "исекай": {
+    "group": "аниме",
+    "definition": "жанр о попадании героя в другой мир",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "попаданцы"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "сёнэн": {
+    "group": "аниме",
+    "definition": "жанр аниме и манги для юношей, боевик",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "сёдзё": {
+    "group": "аниме",
+    "definition": "жанр аниме и манги для девушек, романтика",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "сэйнэн": {
+    "group": "аниме",
+    "definition": "жанр аниме для взрослой аудитории",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "дзёсэй": {
+    "group": "аниме",
+    "definition": "жанр аниме для взрослых женщин",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "кодомо": {
+    "group": "аниме",
+    "definition": "аниме и манга для детей",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "филлер": {
+    "group": "аниме",
+    "definition": "серия, не связанная с основным сюжетом",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "опенинг": {
+    "group": "аниме",
+    "definition": "вступительная заставка или песня аниме",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "интро"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "эндинг": {
+    "group": "аниме",
+    "definition": "финальная заставка или песня аниме",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "концовка"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "онгоинг": {
+    "group": "аниме",
+    "definition": "ещё выходящее серийное аниме",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "сериал"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "хентай": {
+    "group": "аниме",
+    "definition": "порнографическое аниме или манга",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "vulgar"
+  },
+  "яой": {
+    "group": "аниме",
+    "definition": "жанр об отношениях мужских персонажей",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "слэш"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "юри": {
+    "group": "аниме",
+    "definition": "жанр об отношениях женских персонажей",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "сётакон": {
+    "group": "аниме",
+    "definition": "жанр с эротизацией мальчиков",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "vulgar"
+  },
+  "лоликон": {
+    "group": "аниме",
+    "definition": "жанр с эротизацией девочек или его поклонник",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "vulgar"
+  },
+  "гаремник": {
+    "group": "аниме",
+    "definition": "аниме, где героя окружает много девушек",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "гарем"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "гарем": {
+    "group": "аниме",
+    "definition": "жанр аниме о герое и его поклонницах",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "гаремник"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "цундэре": {
+    "group": "аниме",
+    "definition": "типаж героини: холодная снаружи, тёплая внутри",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "яндере": {
+    "group": "аниме",
+    "definition": "типаж: милая снаружи, одержимая внутри",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "кудере": {
+    "group": "аниме",
+    "definition": "типаж: молчаливая, эмоционально холодная героиня",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "дандэре": {
+    "group": "аниме",
+    "definition": "типаж: тихая и застенчивая героиня",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "дэрэдэрэ": {
+    "group": "аниме",
+    "definition": "типаж: открыто влюблённая и ласковая героиня",
+    "pos": "сущ.",
+    "syllables": 4,
+    "synonyms": [],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "гяру": {
+    "group": "аниме",
+    "definition": "модная японская девушка; стиль гяру",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "сэмпай": {
+    "group": "аниме",
+    "definition": "старший товарищ или наставник",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "старший"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "кохай": {
+    "group": "аниме",
+    "definition": "младший товарищ или ученик",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "младший"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "сэнсэй": {
+    "group": "аниме",
+    "definition": "учитель, наставник",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "учитель"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "сэмэ": {
+    "group": "аниме",
+    "definition": "активная сторона в яой-паре",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "укэ": {
+    "group": "аниме",
+    "definition": "пассивная сторона в яой-паре",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "нэко": {
+    "group": "аниме",
+    "definition": "кошка или кошкодевочка; персонаж-кошка",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "кошка"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "ину": {
+    "group": "аниме",
+    "definition": "собака; персонаж-пёс",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "собака"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "кицунэ": {
+    "group": "аниме",
+    "definition": "лиса-оборотень из японской мифологии и аниме",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "лиса"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "ками": {
+    "group": "аниме",
+    "definition": "божество в синтоизме и аниме",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "бог"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "ёкай": {
+    "group": "аниме",
+    "definition": "сверхъестественное существо японской мифологии",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "дух"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "кавай": {
+    "group": "аниме",
+    "definition": "милый, вызывающий умиление",
+    "pos": "прил.",
+    "syllables": 2,
+    "synonyms": [
+      "милый"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "кавайный": {
+    "group": "аниме",
+    "definition": "милый, умилительный",
+    "pos": "прил.",
+    "syllables": 3,
+    "synonyms": [
+      "милый"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "сугой": {
+    "group": "аниме",
+    "definition": "крутой, потрясающий (от яп. sugoi)",
+    "pos": "прил.",
+    "syllables": 2,
+    "synonyms": [
+      "крутой"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "бакка": {
+    "group": "аниме",
+    "definition": "дурак, глупец (от яп. baka)",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "дурак"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "ня": {
+    "group": "аниме",
+    "definition": "междометие, имитация кошачьего мяуканья",
+    "pos": "межд.",
+    "syllables": 1,
+    "synonyms": [
+      "мяу"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "някать": {
+    "group": "аниме",
+    "definition": "говорить «ня», вести себя по-кошачьи",
+    "pos": "глаг.",
+    "syllables": 2,
+    "synonyms": [
+      "мяукать"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "няшный": {
+    "group": "аниме",
+    "definition": "милый, славный",
+    "pos": "прил.",
+    "syllables": 2,
+    "synonyms": [
+      "милый"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "няшность": {
+    "group": "аниме",
+    "definition": "милота, свойство быть няшным",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "милота"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "чиби": {
+    "group": "аниме",
+    "definition": "стиль рисунка с уменьшенными пропорциями",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "чибик": {
+    "group": "аниме",
+    "definition": "персонаж в чиби-стиле; малыш",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "меха": {
+    "group": "аниме",
+    "definition": "жанр про гигантские боевые роботы",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "роботы"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "моэ": {
+    "group": "аниме",
+    "definition": "умиление от персонажа; типаж, вызывающий умиление",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "умиление"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "фурри": {
+    "group": "аниме",
+    "definition": "субкультура поклонников антропоморфных животных",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "фурсона": {
+    "group": "аниме",
+    "definition": "персонаж-зверёк, альтер-эго фурри",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "персонаж"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "фурсьют": {
+    "group": "аниме",
+    "definition": "костюм антропоморфного животного",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "костюм"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "акиба": {
+    "group": "аниме",
+    "definition": "Акихабара, район отаку-культуры в Токио",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "косплеер": {
+    "group": "аниме",
+    "definition": "человек, занимающийся косплеем",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "косплейщик"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "косплеить": {
+    "group": "аниме",
+    "definition": "переодеваться в персонажа",
+    "pos": "глаг.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "косплейщик": {
+    "group": "аниме",
+    "definition": "то же, что косплеер",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "косплеер"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "фэндом": {
+    "group": "аниме",
+    "definition": "сообщество фанатов",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "фанаты"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "шип": {
+    "group": "аниме",
+    "definition": "пара персонажей, которую поддерживают фанаты",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "пара"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "пейринг": {
+    "group": "аниме",
+    "definition": "пара или отношения персонажей",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "шип"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "слэш": {
+    "group": "аниме",
+    "definition": "жанр фанфиков об отношениях мужских персонажей",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "яой"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "фанфик": {
+    "group": "аниме",
+    "definition": "любительское произведение по мотивам аниме или книги",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "озвучка": {
+    "group": "аниме",
+    "definition": "любительский перевод и озвучивание аниме",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "отомэ": {
+    "group": "аниме",
+    "definition": "жанр романтических игр или аниме для девушек",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "сэйю": {
+    "group": "аниме",
+    "definition": "японский актёр озвучивания",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "актёр"
+    ],
+    "era": "2000s",
+    "type": "professional"
+  },
+  "химэ": {
+    "group": "аниме",
+    "definition": "принцесса; почтительное обращение к девушке",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "принцесса"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "они": {
+    "group": "аниме",
+    "definition": "демон из японской мифологии и аниме",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "демон"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "тэнгу": {
+    "group": "аниме",
+    "definition": "горный дух из японской мифологии",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "дух"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "тануки": {
+    "group": "аниме",
+    "definition": "енотовидная собака; зверь-оборотень из мифологии",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "эччи": {
+    "group": "аниме",
+    "definition": "пошлый, развратный (о лёгкой эротике)",
+    "pos": "прил.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "vulgar"
+  },
+  "панцу": {
+    "group": "аниме",
+    "definition": "трусы; кадр с трусами персонажа",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "трусы"
+    ],
+    "era": "2010s",
+    "type": "vulgar"
+  },
+  "фансервис": {
+    "group": "аниме",
+    "definition": "сцены для удовольствия фанатов, часто эротические",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "додзинси": {
+    "group": "аниме",
+    "definition": "любительская манга, часто по мотивам",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "ёнкома": {
+    "group": "аниме",
+    "definition": "четырёхклеточная манга или комикс",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "тентакль": {
+    "group": "аниме",
+    "definition": "щупальце (в эротике с монстрами)",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "щупальце"
+    ],
+    "era": "2000s",
+    "type": "vulgar"
+  },
+  "сама": {
+    "group": "аниме",
+    "definition": "почтительный суффикс к имени, высокий статус",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "нэкомата": {
+    "group": "аниме",
+    "definition": "кошка-оборотень с двумя хвостами",
+    "pos": "сущ.",
+    "syllables": 4,
+    "synonyms": [
+      "кошка"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "тянка": {
+    "group": "аниме",
+    "definition": "девушка, ласковое обращение (от суффикса -тян)",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "девчонка"
+    ],
+    "era": "2010s",
+    "type": "slang"
   }
 }
