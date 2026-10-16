@@ -14592,5 +14592,566 @@
     ],
     "era": "2000s",
     "type": "slang"
+  },
+  "прист": {
+    "group": "геймерский",
+    "definition": "класс персонажа-лекаря (от priest)",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "жрец"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "жрец": {
+    "group": "геймерский",
+    "definition": "класс-лекарь в фэнтези-MMORPG",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "прист"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "некр": {
+    "group": "геймерский",
+    "definition": "некромант, класс, призывающий нежить",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "некромант"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "чародей": {
+    "group": "геймерский",
+    "definition": "магический класс, специалист по заклинаниям",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "волшебник"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "колдун": {
+    "group": "геймерский",
+    "definition": "тёмный магический класс дальнего боя",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "чернокнижник"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "волшебник": {
+    "group": "геймерский",
+    "definition": "магический класс с уроном по площади",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "чародей"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "лич": {
+    "group": "геймерский",
+    "definition": "могущественный маг-нежить, часто босс",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "нежить"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "монах": {
+    "group": "геймерский",
+    "definition": "класс боевых искусств в ближнем бою",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "воин"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "разбойник": {
+    "group": "геймерский",
+    "definition": "класс-вор, бьющий из тени",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "вор"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "следопыт": {
+    "group": "геймерский",
+    "definition": "класс-охотник с питомцем и луком",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "охотник"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "стрелок": {
+    "group": "геймерский",
+    "definition": "класс дальнего боя, владеющий луком или огнестрелом",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "лучник"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "босс": {
+    "group": "геймерский",
+    "definition": "сильнейший противник в конце локации или этапа",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "главарь"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "моб": {
+    "group": "геймерский",
+    "definition": "монстр в игровом мире",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "монстр"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "рак": {
+    "group": "геймерский",
+    "definition": "слабый, плохо играющий игрок (по крабу-раку)",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "нуб"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "спидран": {
+    "group": "геймерский",
+    "definition": "прохождение игры или рейда на скорость",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "забег"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "керри": {
+    "group": "геймерский",
+    "definition": "роль главного дамагера, который решает исход игры",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "дамагер"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "мидер": {
+    "group": "геймерский",
+    "definition": "игрок средней линии в MOBA",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "мид"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "офлейнер": {
+    "group": "геймерский",
+    "definition": "игрок сложной линии в MOBA",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "хардлайнер"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "роумер": {
+    "group": "геймерский",
+    "definition": "игрок, постоянно движущийся по карте и помогающий линиям",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "ганкер"
+    ],
+    "era": "2010s",
+    "type": "slang"
+  },
+  "ульта": {
+    "group": "геймерский",
+    "definition": "ультимативный навык персонажа",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "ультимейт"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "абилка": {
+    "group": "геймерский",
+    "definition": "способность, умение персонажа",
+    "pos": "сущ.",
+    "syllables": 3,
+    "synonyms": [
+      "скилл"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "спек": {
+    "group": "геймерский",
+    "definition": "специализация класса",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "специализация"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "баф": {
+    "group": "геймерский",
+    "definition": "временное усиление характеристик",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "усиление"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "дебаф": {
+    "group": "геймерский",
+    "definition": "временное ослабление цели",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "ослабление"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "каст": {
+    "group": "геймерский",
+    "definition": "применение заклинания",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "заклинание"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "кастовать": {
+    "group": "геймерский",
+    "definition": "произносить заклинание, применять навык",
+    "pos": "глаг.",
+    "syllables": 3,
+    "synonyms": [
+      "колдовать"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "стан": {
+    "group": "геймерский",
+    "definition": "оглушение, обездвиживание цели",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "оглушение"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "дот": {
+    "group": "геймерский",
+    "definition": "урон с течением времени (damage over time)",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "периодика"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "тик": {
+    "group": "геймерский",
+    "definition": "единичное срабатывание периодического урона или лечения",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "отсчёт"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "прок": {
+    "group": "геймерский",
+    "definition": "случайное срабатывание эффекта предмета",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "срабатывание"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "агрить": {
+    "group": "геймерский",
+    "definition": "притягивать внимание монстра или босса на себя",
+    "pos": "глаг.",
+    "syllables": 2,
+    "synonyms": [
+      "задирать"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "ганк": {
+    "group": "геймерский",
+    "definition": "внезапная атака на противника",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "засада"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "ганкать": {
+    "group": "геймерский",
+    "definition": "атаковать врага внезапно, из засады",
+    "pos": "глаг.",
+    "syllables": 2,
+    "synonyms": [
+      "нападать"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "рашить": {
+    "group": "геймерский",
+    "definition": "идти агрессивным рывком на противника",
+    "pos": "глаг.",
+    "syllables": 2,
+    "synonyms": [
+      "нестись"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "пушить": {
+    "group": "геймерский",
+    "definition": "продавливать линию, атаковать башни",
+    "pos": "глаг.",
+    "syllables": 2,
+    "synonyms": [
+      "теснить"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "фарм": {
+    "group": "геймерский",
+    "definition": "добыча ресурсов, денег и опыта",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "добыча"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "кач": {
+    "group": "геймерский",
+    "definition": "процесс прокачки уровня персонажа",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "прокачка"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "качать": {
+    "group": "геймерский",
+    "definition": "повышать уровень персонажа",
+    "pos": "глаг.",
+    "syllables": 2,
+    "synonyms": [
+      "прокачивать"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "левел": {
+    "group": "геймерский",
+    "definition": "уровень персонажа",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "уровень"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "гир": {
+    "group": "геймерский",
+    "definition": "экипировка, снаряжение персонажа",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "шмот"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "сет": {
+    "group": "геймерский",
+    "definition": "комплект предметов, дающий бонусы",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "комплект"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "гем": {
+    "group": "геймерский",
+    "definition": "камень для вставки в экипировку",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "камень"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "чарка": {
+    "group": "геймерский",
+    "definition": "свиток улучшения предмета (традиция Lineage)",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "энчант"
+    ],
+    "era": "2000s",
+    "type": "slang"
+  },
+  "точить": {
+    "group": "геймерский",
+    "definition": "улучшать предмет заточкой",
+    "pos": "глаг.",
+    "syllables": 2,
+    "synonyms": [
+      "улучшать"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "профа": {
+    "group": "геймерский",
+    "definition": "профессия, ремесло персонажа",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "ремесло"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "соклан": {
+    "group": "геймерский",
+    "definition": "товарищ по клану",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "клановец"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "альт": {
+    "group": "геймерский",
+    "definition": "второстепенный персонаж игрока",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "твинк"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "твинк": {
+    "group": "геймерский",
+    "definition": "альтернативный персонаж, часто прокачанный",
+    "pos": "сущ.",
+    "syllables": 1,
+    "synonyms": [
+      "альт"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "альянс": {
+    "group": "геймерский",
+    "definition": "фракция-коалиция игроков, враждующая с ордой",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "союз"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "орда": {
+    "group": "геймерский",
+    "definition": "враждебная фракция в World of Warcraft",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "фракция"
+    ],
+    "era": "universal",
+    "type": "slang"
+  },
+  "соло": {
+    "group": "геймерский",
+    "definition": "игра в одиночку, вне группы",
+    "pos": "сущ.",
+    "syllables": 2,
+    "synonyms": [
+      "одиночка"
+    ],
+    "era": "universal",
+    "type": "slang"
   }
 }
