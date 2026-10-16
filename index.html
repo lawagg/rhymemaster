@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Студия ритмики — прототип v20</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #1a1a2e; color: #e8e8e8; padding: 24px; min-height: 100vh;
+  }
+  h1 { font-size: 20px; font-weight: 600; margin-bottom: 20px; color: #9d9dff; }
+
+  .toolbar-top {
+    display: flex; gap: 8px; margin-bottom: 20px; padding: 10px;
+    background: #252540; border-radius: 10px; border: 1px solid #3d3d5c;
+    align-items: center; flex-wrap: wrap;
+  }
+  .tool-btn {
+    background: #2d2d4a; color: #e8e8e8; border: 2px solid #3d3d5c;
+    padding: 8px 14px; border-radius: 6px; cursor: pointer;
+    font-size: 13px; transition: all 0.15s;
+  }
+  .tool-btn:hover { background: #3d3d5c; }
+  .tool-btn.active { background: #5d5dff; border-color: #5d5dff; color: white; }
+
+  .separator { width: 1px; height: 24px; background: #3d3d5c; margin: 0 8px; }
+
+  .color-palette { display: flex; gap: 14px; }
+  .color-dot {
+    width: 30px; height: 30px; border-radius: 50%; cursor: pointer;
+    border: 3px solid transparent; transition: transform 0.15s;
+    position: relative;
+  }
+  .color-dot:hover { transform: scale(1.15); }
+  .color-dot.active { border-color: white; box-shadow: 0 0 12px 3px currentColor; }
+  .color-dot.green { background: #22ff88; color: #22ff88; }
+  .color-dot.blue { background: #3bb2ff; color: #3bb2ff; }
+  .color-dot.purple { background: #d44cff; color: #d44cff; }
+  .color-dot.yellow { background: #ffd93b; color: #ffd93b; }
+
+  .color-dot .pattern-badge {
+    position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%);
+    background: #1a1a2e; color: #9d9dff;
+    font-size: 10px; font-weight: 700; border-radius: 8px;
+    padding: 1px 6px; border: 1px solid #9d9dff;
+    white-space: nowrap; pointer-events: none;
+  }
+
+  button {
+    background: #2d2d4a; color: #e8e8e8; border: 1px solid #3d3d5c;
+    padding: 8px 16px; border-radius: 6px; cursor: pointer;
+    font-size: 14px; transition: background 0.15s;
+  }
+  button:hover { background: #3d3d5c; }
+  button:disabled { opacity: 0.4; cursor: default; }
+  button:disabled:hover { background: #2d2d4a; }
+
+  .line {
+    background: #252540; border: 1px solid #3d3d5c; border-radius: 10px;
+    padding: 16px; margin-bottom: 16px; transition: border-color 0.15s;
+  }
+  .line.active { border-color: #5d5dff; }
+  .line-header {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 12px;
+  }
+  .line-label { font-size: 13px; color: #8888aa; }
+  .line-mode-tag {
+    font-size: 11px; padding: 2px 8px; border-radius: 6px;
+    background: #2a2a4a; color: #9d9dff;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+
+  .tacts {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 8px; align-items: stretch;
+  }
+  .tact {
+    background: #1e1e33; border-radius: 8px; padding: 8px;
+    border: 1px solid #2d2d4a; position: relative;
+    display: flex; flex-direction: column;
+  }
+  .tact.is-custom { border-color: #5d3d7a; }
+  .tact-label {
+    font-size: 11px; color: #7777aa; text-align: center;
+    margin-bottom: 6px; padding: 4px;
+    background: #15152a; border-radius: 4px;
+    cursor: pointer; user-select: none; transition: all 0.15s;
+    flex-shrink: 0;
+  }
+  .tact-label:hover { color: #9d9dff; background: #2a2a4a; }
+  .tact.is-custom .tact-label { color: #d44cff; }
+
+  .cells {
+    display: grid; gap: 6px; flex: 1; align-content: center;
+    padding-top: 6px;
+  }
+  .cells.size-2 { grid-template-columns: repeat(2, 1fr); }
+  .cells.size-3 { grid-template-columns: repeat(3, 1fr); }
+  .cells.size-4 { grid-template-columns: repeat(4, 1fr); }
+  .cells.size-6 { grid-template-columns: repeat(6, 1fr); }
+  .cells.size-8 { grid-template-columns: repeat(8, 1fr); }
+
+  .cell {
+    aspect-ratio: 1; width: 100%; max-width: 44px; max-height: 44px;
+    justify-self: center; align-self: center;
+    border-radius: 6px; cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.15s;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 600; color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+    user-select: none;
+    position: relative;
+  }
+  .cell:hover { transform: scale(1.12); z-index: 5; }
+  .cell.stressed { background: #ff6b6b; }
+  .cell.unstressed { background: #4a4a6e; }
+  .cell.empty {
+    background: #15152a; border: 2px dashed #2d2d4a;
+  }
+
+  .cell.template.mark-green { box-shadow: 0 0 0 5px #22ff88, 0 0 22px 7px rgba(34,255,136,0.85); }
+  .cell.template.mark-blue { box-shadow: 0 0 0 5px #3bb2ff, 0 0 22px 7px rgba(59,178,255,0.85); }
+  .cell.template.mark-purple { box-shadow: 0 0 0 5px #d44cff, 0 0 22px 7px rgba(212,76,255,0.85); }
+  .cell.template.mark-yellow { box-shadow: 0 0 0 5px #ffd93b, 0 0 22px 7px rgba(255,217,59,0.85); }
+
+  .cell.template::before {
+    content: '';
+    position: absolute;
+    top: -9px; left: 50%;
+    transform: translateX(-50%);
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 0 8px 2px rgba(255,255,255,0.9);
+    z-index: 6;
+  }
+
+  .cell.target.mark-green { box-shadow: 0 0 0 3px #22ff88, 0 0 10px 3px rgba(34,255,136,0.5); }
+  .cell.target.mark-blue { box-shadow: 0 0 0 3px #3bb2ff, 0 0 10px 3px rgba(59,178,255,0.5); }
+  .cell.target.mark-purple { box-shadow: 0 0 0 3px #d44cff, 0 0 10px 3px rgba(212,76,255,0.5); }
+  .cell.target.mark-yellow { box-shadow: 0 0 0 3px #ffd93b, 0 0 10px 3px rgba(255,217,59,0.5); }
+
+  .cell.mark-protected { animation: shake 0.3s; }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+  }
+
+  .toast {
+    position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%);
+    background: #ff3b3b; color: white;
+    padding: 14px 24px; border-radius: 8px;
+    font-size: 14px; font-weight: 500;
+    box-shadow: 0 8px 32px rgba(255,59,59,0.5);
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 1000;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(-10px); }
+  .toast.warning { background: #ffb020; box-shadow: 0 8px 32px rgba(255,176,32,0.5); }
+  .toast.success { background: #22c55e; box-shadow: 0 8px 32px rgba(34,197,94,0.5); }
+
+  .tact-menu {
+    position: absolute; top: 44px; left: 0;
+    background: #2a2a4a; border: 1px solid #5d5dff; border-radius: 8px;
+    padding: 12px; z-index: 100; min-width: 220px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  }
+  .tact-menu h4 {
+    font-size: 11px; color: #8888aa; margin-bottom: 6px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .tact-menu select {
+    width: 100%; background: #1e1e33; color: #e8e8e8;
+    border: 1px solid #3d3d5c; border-radius: 4px;
+    padding: 6px 8px; margin-bottom: 10px; font-size: 13px;
+  }
+  .tact-menu .close-menu {
+    position: absolute; top: 6px; right: 8px; background: none;
+    border: none; color: #8888aa; font-size: 16px; cursor: pointer;
+    padding: 0; width: 20px; height: 20px;
+  }
+  .tact-menu .close-menu:hover { color: #ff6b6b; background: none; }
+
+  .hint {
+    margin-top: 30px; padding: 16px; background: #1e1e33;
+    border-radius: 8px; font-size: 13px; color: #9999bb; line-height: 1.7;
+  }
+  .hint b { color: #9d9dff; }
+  .hint code {
+    background: #15152a; color: #9d9dff;
+    padding: 1px 6px; border-radius: 4px; font-family: monospace;
+    font-size: 12px;
+  }
+  .hint .legend { display: inline-flex; align-items: center; gap: 6px; margin-right: 16px; }
+  .hint .legend .dot {
+    width: 14px; height: 14px; border-radius: 4px;
+    background: #4a4a6e; display: inline-block;
+  }
+  .hint .legend .dot.template-demo {
+    box-shadow: 0 0 0 3px #22ff88, 0 0 12px 4px rgba(34,255,136,0.7);
+    position: relative;
+  }
+  .hint .legend .dot.template-demo::before {
+    content: '';
+    position: absolute;
+    top: -5px; left: 50%; transform: translateX(-50%);
+    width: 5px; height: 5px; border-radius: 50%;
+    background: white;
+  }
+  .hint .legend .dot.target-demo {
+    box-shadow: 0 0 0 2px #22ff88, 0 0 6px 2px rgba(34,255,136,0.4);
+  }
+</style>
+</head>
+<body>
+
+<h1>🎵 Студия ритмики — прототип v20</h1>
+
+<div class="toolbar-top">
+  <button class="tool-btn active" data-tool="pencil">✏️ Карандаш</button>
+  <button class="tool-btn" data-tool="text">📝 Текст</button>
+  <button class="tool-btn" data-tool="marker">🖍️ Маркер Рифмы</button>
+  <div class="separator"></div>
+  <div class="color-palette" id="palette">
+    <div class="color-dot green" data-color="green" title="Зелёный"></div>
+    <div class="color-dot blue" data-color="blue" title="Синий"></div>
+    <div class="color-dot purple" data-color="purple" title="Фиолетовый"></div>
+    <div class="color-dot yellow" data-color="yellow" title="Жёлтый"></div>
+  </div>
+  <div class="separator"></div>
+  <button id="btn-add-line">+ Строка</button>
+  <button id="btn-undo" title="Ctrl+Z">↶ Undo</button>
+  <button id="btn-redo" title="Ctrl+Y / Ctrl+Shift+Z">↷ Redo</button>
+  <button id="btn-reset-patterns">✕ Сбросить шаблоны</button>
+</div>
+
+<div id="canvas"></div>
+<div class="toast" id="toast"></div>
+
+<div class="hint">
+  <b>Горячие клавиши:</b> <code>Ctrl+Z</code> — Undo, <code>Ctrl+Y</code> или <code>Ctrl+Shift+Z</code> — Redo.<br>
+  <br>
+  <b>Режим — свойство каждого такта.</b> Кликни на плашку такта → выбери «Хорей», «Ямб», ..., или «Кастомный».<br>
+  <br>
+  <b>Как рисовать:</b><br>
+  • <b>Обычный drag</b> — новая группа.<br>
+  • <code>Shift</code> + <b>drag</b> — продлить существующую группу того же цвета.<br>
+  • <b>ЛКМ на ячейке группы</b> — снять маркер. <b>ПКМ</b> — снять с одной ячейки.<br>
+  <br>
+  <b>Легенда:</b>
+  <span class="legend"><span class="dot template-demo"></span> Запрос (шаблон)</span>
+  <span class="legend"><span class="dot target-demo"></span> Цель</span>
+</div>
+
+<script>
+const PATTERNS_BY_SIZE = {
+  2: { 'Хорей': [true,false], 'Ямб': [false,true] },
+  3: { 'Дактиль': [true,false,false], 'Амфибрахий': [false,true,false], 'Анапест': [false,false,true],
+       'Хорей': [true,false,true], 'Ямб': [false,true,false] },
+  4: { 'Хорей': [true,false,true,false], 'Ямб': [false,true,false,true], 'Дактиль': [true,false,false,true] },
+  6: { 'Хорей': [true,false,true,false,true,false], 'Ямб': [false,true,false,true,false,true],
+       'Дактиль': [true,false,false,true,false,false], 'Амфибрахий': [false,true,false,false,true,false],
+       'Анапест': [false,false,true,false,false,true] },
+  8: { 'Хорей': [true,false,true,false,true,false,true,false],
+       'Дактиль': [true,false,false,true,false,false,true,false] },
+};
+const AVAILABLE_SIZES = [2, 3, 4, 6, 8];
+const MARKER_COLORS = ['green', 'blue', 'purple', 'yellow'];
+
+let nextGroupId = 1;
+
+const state = {
+  lines: [], activeLine: 0,
+  tool: 'pencil', markerColor: 'green',
+  history: [],
+  future: [],
+  markerTemplates: { green: null, blue: null, purple: null, yellow: null },
+};
+
+function makeCellsFromPattern(size, pattern) {
+  const pat = PATTERNS_BY_SIZE[size][pattern];
+  return pat.map(stressed => ({
+    state: stressed ? 'stressed' : 'unstressed',
+    text: null, mark: null, markGroup: null,
+  }));
+}
+function makeEmptyCells(size) {
+  return Array.from({ length: size }, () => ({
+    state: 'empty', text: null, mark: null, markGroup: null,
+  }));
+}
+
+function createTact() {
+  return {
+    mode: 'standard',
+    size: 4,
+    standard: { pattern: 'Хорей', cells: makeCellsFromPattern(4, 'Хорей') },
+    custom: { cells: makeEmptyCells(4) },
+  };
+}
+function createLine() {
+  return { tacts: [createTact(), createTact(), createTact(), createTact()] };
+}
+
+function getActiveTact(tact) {
+  return tact.mode === 'standard' ? tact.standard : tact.custom;
+}
+function isLineCustom(line) {
+  return line.tacts.some(t => t.mode === 'custom');
+}
+
+function cloneCell(c) { return { state: c.state, text: c.text, mark: c.mark, markGroup: c.markGroup }; }
+function cloneTact(t) {
+  return {
+    mode: t.mode,
+    size: t.size,
+    standard: { pattern: t.standard.pattern, cells: t.standard.cells.map(cloneCell) },
+    custom: { cells: t.custom.cells.map(cloneCell) },
+  };
+}
+function cloneLine(l) { return { tacts: l.tacts.map(cloneTact) }; }
+
+function getSnapshot() {
+  return {
+    lines: state.lines.map(cloneLine),
+    activeLine: state.activeLine,
+    tool: state.tool, markerColor: state.markerColor,
+    markerTemplates: JSON.parse(JSON.stringify(state.markerTemplates)),
+    nextGroupId: nextGroupId,
+  };
+}
+function pushHistory(snap) {
+  state.history.push(snap);
+  if (state.history.length > 100) state.history.shift();
+  state.future.length = 0;
+  updateUndoRedoButtons();
+}
+function act(fn) {
+  const snap = getSnapshot();
+  fn();
+  pushHistory(snap);
+}
+function restoreSnapshot(snap) {
+  state.lines = snap.lines.map(cloneLine);
+  state.activeLine = snap.activeLine;
+  state.tool = snap.tool; state.markerColor = snap.markerColor;
+  state.markerTemplates = snap.markerTemplates;
+  if (snap.nextGroupId) nextGroupId = snap.nextGroupId;
+  render(); updateToolbarUI();
+}
+
+function undo() {
+  if (state.history.length === 0) return;
+  const current = getSnapshot();
+  state.future.push(current);
+  const snap = state.history.pop();
+  restoreSnapshot(snap);
+  updateUndoRedoButtons();
+}
+function redo() {
+  if (state.future.length === 0) return;
+  const current = getSnapshot();
+  state.history.push(current);
+  if (state.history.length > 100) state.history.shift();
+  const snap = state.future.pop();
+  restoreSnapshot(snap);
+  updateUndoRedoButtons();
+}
+function updateUndoRedoButtons() {
+  const u = document.getElementById('btn-undo');
+  const r = document.getElementById('btn-redo');
+  if (u) u.disabled = state.history.length === 0;
+  if (r) r.disabled = state.future.length === 0;
+}
+
+let toastTimer = null;
+function showToast(message, type = 'error') {
+  const t = document.getElementById('toast');
+  t.textContent = message;
+  t.className = 'toast show' + (type === 'warning' ? ' warning' : (type === 'success' ? ' success' : ''));
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { t.className = 'toast'; }, 3000);
+}
+
+function getAllCellsFlat() {
+  const flat = [];
+  state.lines.forEach((line, lineIdx) => {
+    line.tacts.forEach((tact, tactIdx) => {
+      const active = getActiveTact(tact);
+      active.cells.forEach((cell, cellIdx) => {
+        flat.push({ lineIdx, tactIdx, cellIdx, cell });
+      });
+    });
+  });
+  return flat;
+}
+function getCellAt(lineIdx, tactIdx, cellIdx) {
+  const tact = state.lines[lineIdx]?.tacts[tactIdx];
+  if (!tact) return null;
+  const active = getActiveTact(tact);
+  return active.cells[cellIdx] || null;
+}
+
+function getNeighbors(lineIdx, tactIdx, cellIdx) {
+  const line = state.lines[lineIdx];
+  if (!line) return [];
+  const tact = line.tacts[tactIdx];
+  const active = getActiveTact(tact);
+  const n = [];
+  if (cellIdx > 0) n.push({ lineIdx, tactIdx, cellIdx: cellIdx - 1 });
+  if (cellIdx < active.cells.length - 1) n.push({ lineIdx, tactIdx, cellIdx: cellIdx + 1 });
+  if (cellIdx === 0 && tactIdx > 0) {
+    const p = line.tacts[tactIdx - 1];
+    const pActive = getActiveTact(p);
+    n.push({ lineIdx, tactIdx: tactIdx - 1, cellIdx: pActive.cells.length - 1 });
+  }
+  if (cellIdx === active.cells.length - 1 && tactIdx < line.tacts.length - 1)
+    n.push({ lineIdx, tactIdx: tactIdx + 1, cellIdx: 0 });
+  if (cellIdx === active.cells.length - 1 && tactIdx === line.tacts.length - 1 && lineIdx < state.lines.length - 1)
+    n.push({ lineIdx: lineIdx + 1, tactIdx: 0, cellIdx: 0 });
+  if (cellIdx === 0 && tactIdx === 0 && lineIdx > 0) {
+    const pl = state.lines[lineIdx - 1];
+    const pt = pl.tacts[pl.tacts.length - 1];
+    const ptActive = getActiveTact(pt);
+    n.push({ lineIdx: lineIdx - 1, tactIdx: pl.tacts.length - 1, cellIdx: ptActive.cells.length - 1 });
+  }
+  return n;
+}
+
+function findAdjacentGroupId(color, lineIdx, tactIdx, cellIdx) {
+  const neighbors = getNeighbors(lineIdx, tactIdx, cellIdx);
+  for (const n of neighbors) {
+    const c = getCellAt(n.lineIdx, n.tactIdx, n.cellIdx);
+    if (c && c.mark === color && c.markGroup != null) return c.markGroup;
+  }
+  return null;
+}
+
+function getGroupCells(color, lineIdx, tactIdx, cellIdx) {
+  const cell = getCellAt(lineIdx, tactIdx, cellIdx);
+  if (!cell || cell.mark !== color || cell.markGroup == null) return [];
+  const gid = cell.markGroup;
+  const result = [];
+  state.lines.forEach((line, li) => {
+    line.tacts.forEach((tact, ti) => {
+      const active = getActiveTact(tact);
+      active.cells.forEach((c, ci) => {
+        if (c.mark === color && c.markGroup === gid) {
+          result.push({ lineIdx: li, tactIdx: ti, cellIdx: ci, cell: c });
+        }
+      });
+    });
+  });
+  result.sort((a, b) => {
+    if (a.lineIdx !== b.lineIdx) return a.lineIdx - b.lineIdx;
+    if (a.tactIdx !== b.tactIdx) return a.tactIdx - b.tactIdx;
+    return a.cellIdx - b.cellIdx;
+  });
+  return result;
+}
+
+function getAllGroups(color) {
+  const byGroup = new Map();
+  state.lines.forEach((line, li) => {
+    line.tacts.forEach((tact, ti) => {
+      const active = getActiveTact(tact);
+      active.cells.forEach((c, ci) => {
+        if (c.mark === color && c.markGroup != null) {
+          if (!byGroup.has(c.markGroup)) byGroup.set(c.markGroup, []);
+          byGroup.get(c.markGroup).push({ lineIdx: li, tactIdx: ti, cellIdx: ci, cell: c });
+        }
+      });
+    });
+  });
+  const groups = Array.from(byGroup.values());
+  groups.forEach(g => g.sort((a, b) => {
+    if (a.lineIdx !== b.lineIdx) return a.lineIdx - b.lineIdx;
+    if (a.tactIdx !== b.tactIdx) return a.tactIdx - b.tactIdx;
+    return a.cellIdx - b.cellIdx;
+  }));
+  return groups;
+}
+
+function buildTemplateFromCells(cells) {
+  return {
+    groupId: cells[0]?.cell.markGroup || null,
+    length: cells.length,
+    states: cells.map(c => c.cell.state),
+  };
+}
+function matchesTemplate(cells, tpl) {
+  if (cells.length !== tpl.length) return false;
+  for (let i = 0; i < cells.length; i++)
+    if (cells[i].cell.state !== tpl.states[i]) return false;
+  return true;
+}
+function hasStressed(cells) { return cells.some(c => c.cell.state === 'stressed'); }
+function hasEmptyEdges(cells) {
+  return cells.length === 0 || cells[0].cell.state === 'empty' || cells[cells.length - 1].cell.state === 'empty';
+}
+function describeTemplate(t) {
+  return t.states.map(s => s === 'stressed' ? '●' : (s === 'unstressed' ? '○' : '·')).join('');
+}
+
+function validateColorGroups(color) {
+  const groups = getAllGroups(color);
+  const prevTpl = state.markerTemplates[color];
+
+  if (groups.length === 0) {
+    state.markerTemplates[color] = null;
+    return null;
+  }
+
+  const toClear = [];
+  let reason = null;
+
+  const valid = [];
+  for (const g of groups) {
+    if (hasEmptyEdges(g)) { toClear.push(g); if (!reason) reason = 'empty_edges'; continue; }
+    if (!hasStressed(g)) { toClear.push(g); if (!reason) reason = 'no_stressed'; continue; }
+    valid.push(g);
+  }
+
+  if (prevTpl && prevTpl.groupId != null) {
+    const tplGroupExists = valid.some(g => g[0]?.cell.markGroup === prevTpl.groupId);
+    if (!tplGroupExists) {
+      groups.forEach(g => g.forEach(c => { c.cell.mark = null; c.cell.markGroup = null; }));
+      state.markerTemplates[color] = null;
+      return 'template_lost';
+    }
+  }
+
+  let template = null;
+  let templateGroupId = null;
+
+  if (prevTpl && prevTpl.groupId != null) {
+    const tplGroup = valid.find(g => g[0]?.cell.markGroup === prevTpl.groupId);
+    if (tplGroup) {
+      template = buildTemplateFromCells(tplGroup);
+      templateGroupId = prevTpl.groupId;
+    }
+  }
+
+  if (!template && !prevTpl && valid.length > 0) {
+    let oldest = valid[0];
+    for (const g of valid) {
+      const gid = g[0]?.cell.markGroup ?? Infinity;
+      const oldestGid = oldest[0]?.cell.markGroup ?? Infinity;
+      if (gid < oldestGid) oldest = g;
+    }
+    template = buildTemplateFromCells(oldest);
+    templateGroupId = oldest[0]?.cell.markGroup;
+  }
+
+  if (!template) {
+    groups.forEach(g => g.forEach(c => { c.cell.mark = null; c.cell.markGroup = null; }));
+    state.markerTemplates[color] = null;
+    return 'template_lost';
+  }
+
+  for (const g of valid) {
+    if (g[0]?.cell.markGroup === templateGroupId) continue;
+    if (!matchesTemplate(g, template)) {
+      toClear.push(g);
+      if (!reason) reason = 'not_match';
+    }
+  }
+
+  toClear.forEach(g => g.forEach(c => { c.cell.mark = null; c.cell.markGroup = null; }));
+
+  state.markerTemplates[color] = template;
+  return toClear.length > 0 ? reason : null;
+}
+
+function validateAllColors() {
+  const results = {};
+  MARKER_COLORS.forEach(c => { const r = validateColorGroups(c); if (r) results[c] = r; });
+  return results;
+}
+
+function isMarkerEdgeOfGroup(lineIdx, tactIdx, cellIdx, color) {
+  const group = getGroupCells(color, lineIdx, tactIdx, cellIdx);
+  const idx = group.findIndex(c => c.lineIdx === lineIdx && c.tactIdx === tactIdx && c.cellIdx === cellIdx);
+  if (idx === -1) return false;
+  return idx === 0 || idx === group.length - 1;
+}
+
+function applyPencilDrag(lineIdx, tactIdx, cellIdx) {
+  const tact = state.lines[lineIdx].tacts[tactIdx];
+  const active = getActiveTact(tact);
+  const cell = active.cells[cellIdx];
+  if (drag.pencilTarget === 'empty') cell.state = 'empty';
+  else if (drag.pencilTarget === 'pattern') {
+    const pat = PATTERNS_BY_SIZE[tact.size][active.pattern];
+    cell.state = pat[cellIdx] ? 'stressed' : 'unstressed';
+  } else {
+    if (cell.state === 'empty') cell.state = 'stressed';
+    else if (cell.state === 'stressed') cell.state = 'unstressed';
+    else cell.state = 'empty';
+  }
+}
+
+function addLine() {
+  act(() => {
+    state.lines.push(createLine());
+    state.activeLine = state.lines.length - 1;
+    render();
+  });
+}
+function setTool(tool) { state.tool = tool; updateToolbarUI(); render(); }
+function setMarkerColor(color) { state.markerColor = color; updateToolbarUI(); }
+function setActiveLine(idx) { state.activeLine = idx; }
+
+function changeTactSize(lineIdx, tactIdx, newSize) {
+  act(() => {
+    const tact = state.lines[lineIdx].tacts[tactIdx];
+
+    const oldStdCells = tact.standard.cells;
+    const newStd = [];
+    for (let i = 0; i < newSize; i++) {
+      if (i < oldStdCells.length) newStd.push({ ...oldStdCells[i] });
+      else {
+        const pat = PATTERNS_BY_SIZE[newSize][tact.standard.pattern];
+        newStd.push({
+          state: pat ? (pat[i] ? 'stressed' : 'unstressed') : 'empty',
+          text: null, mark: null, markGroup: null,
+        });
+      }
+    }
+    tact.standard.cells = newStd;
+
+    const oldCustCells = tact.custom.cells;
+    const newCust = [];
+    for (let i = 0; i < newSize; i++) {
+      if (i < oldCustCells.length) newCust.push({ ...oldCustCells[i] });
+      else newCust.push({ state: 'empty', text: null, mark: null, markGroup: null });
+    }
+    tact.custom.cells = newCust;
+
+    tact.size = newSize;
+    validateAllColors();
+    render();
+  });
+}
+
+function changeTactMode(lineIdx, tactIdx, selection) {
+  const validPatterns = Object.keys(PATTERNS_BY_SIZE[state.lines[lineIdx].tacts[tactIdx].size] || {});
+  let newSize = null;
+  if (selection !== 'Кастомный' && !validPatterns.includes(selection)) {
+    for (const s of AVAILABLE_SIZES) {
+      if (PATTERNS_BY_SIZE[s] && PATTERNS_BY_SIZE[s][selection]) { newSize = s; break; }
+    }
+    if (newSize === null) { showToast('Этот паттерн недоступен'); return; }
+  }
+
+  act(() => {
+    const tact = state.lines[lineIdx].tacts[tactIdx];
+
+    if (selection === 'Кастомный') {
+      tact.mode = 'custom';
+      if (tact.custom.cells.length !== tact.size) {
+        const newCust = [];
+        for (let i = 0; i < tact.size; i++) {
+          if (i < tact.custom.cells.length) newCust.push({ ...tact.custom.cells[i] });
+          else newCust.push({ state: 'empty', text: null, mark: null, markGroup: null });
+        }
+        tact.custom.cells = newCust;
+      }
+    } else {
+      if (newSize !== null) {
+        tact.size = newSize;
+        tact.standard.pattern = selection;
+        tact.standard.cells = makeCellsFromPattern(newSize, selection);
+        const newCust = [];
+        for (let i = 0; i < newSize; i++) {
+          if (i < tact.custom.cells.length) newCust.push({ ...tact.custom.cells[i] });
+          else newCust.push({ state: 'empty', text: null, mark: null, markGroup: null });
+        }
+        tact.custom.cells = newCust;
+      } else {
+        tact.standard.pattern = selection;
+        tact.standard.cells = makeCellsFromPattern(tact.size, selection);
+      }
+      tact.mode = 'standard';
+    }
+
+    validateAllColors();
+    render();
+  });
+}
+
+function clearTact(lineIdx, tactIdx) {
+  act(() => {
+    const tact = state.lines[lineIdx].tacts[tactIdx];
+    const active = getActiveTact(tact);
+    active.cells.forEach(c => { c.state = 'empty'; c.text = null; });
+    validateAllColors();
+    render();
+  });
+}
+
+const drag = {
+  active: false, tool: null, mode: null, color: null, groupId: null,
+  pencilTarget: null, visited: null,
+  startSnapshot: null,
+  startKey: null,
+};
+
+function onCellMouseDown(lineIdx, tactIdx, cellIdx, e) {
+  if (e.button === 2) return;
+  e.preventDefault();
+  setActiveLine(lineIdx);
+
+  const cell = getCellAt(lineIdx, tactIdx, cellIdx);
+  if (!cell) return;
+
+  if (state.tool === 'marker') {
+    const color = state.markerColor;
+    if (cell.mark && cell.mark !== color) {
+      showToast('Сначала снимите старый маркер, потом ставьте новый');
+      return;
+    }
+    drag.active = true;
+    drag.tool = 'marker';
+    drag.color = color;
+    drag.mode = (cell.mark === color) ? 'remove' : 'add';
+    drag.visited = new Set();
+    drag.startSnapshot = getSnapshot();
+    drag.startKey = `${lineIdx}:${tactIdx}:${cellIdx}`;
+
+    if (drag.mode === 'add') {
+      if (e.shiftKey) {
+        const adjId = findAdjacentGroupId(color, lineIdx, tactIdx, cellIdx);
+        if (adjId != null) {
+          drag.groupId = adjId;
+        } else {
+          drag.groupId = nextGroupId++;
+          showToast('Рядом нет группы того же цвета — создана новая', 'warning');
+        }
+      } else {
+        drag.groupId = nextGroupId++;
+      }
+      cell.mark = color;
+      cell.markGroup = drag.groupId;
+      drag.visited.add(drag.startKey);
+    } else {
+      drag.groupId = cell.markGroup;
+      if (!isMarkerEdgeOfGroup(lineIdx, tactIdx, cellIdx, color)) {
+        showToast('Снимать маркер можно только с края группы');
+        flashProtected(lineIdx, tactIdx, cellIdx);
+        drag.active = false;
+        drag.startSnapshot = null;
+        return;
+      }
+      cell.mark = null;
+      cell.markGroup = null;
+      drag.visited.add(drag.startKey);
+    }
+    render();
+  } else if (state.tool === 'pencil') {
+    drag.active = true;
+    drag.tool = 'pencil';
+    drag.visited = new Set();
+    drag.startSnapshot = getSnapshot();
+    const tact = state.lines[lineIdx].tacts[tactIdx];
+    if (tact.mode === 'standard') {
+      drag.pencilTarget = (cell.state === 'empty') ? 'pattern' : 'empty';
+    } else {
+      drag.pencilTarget = 'toggle';
+    }
+    applyPencilDrag(lineIdx, tactIdx, cellIdx);
+    drag.visited.add(`${lineIdx}:${tactIdx}:${cellIdx}`);
+    render();
+  }
+}
+
+function onCellMouseEnter(lineIdx, tactIdx, cellIdx) {
+  if (!drag.active) return;
+  const key = `${lineIdx}:${tactIdx}:${cellIdx}`;
+  if (drag.visited.has(key)) return;
+  const cell = getCellAt(lineIdx, tactIdx, cellIdx);
+  if (!cell) return;
+
+  if (drag.tool === 'marker') {
+    if (drag.mode === 'add') {
+      if (cell.mark === drag.color) return;
+      if (cell.mark && cell.mark !== drag.color) return;
+      drag.visited.add(key);
+      cell.mark = drag.color;
+      cell.markGroup = drag.groupId;
+      render();
+    } else {
+      if (cell.mark !== drag.color) return;
+      if (cell.markGroup !== drag.groupId) return;
+      if (!isMarkerEdgeOfGroup(lineIdx, tactIdx, cellIdx, drag.color)) {
+        flashProtected(lineIdx, tactIdx, cellIdx);
+        return;
+      }
+      drag.visited.add(key);
+      cell.mark = null;
+      cell.markGroup = null;
+      render();
+    }
+  } else if (drag.tool === 'pencil') {
+    drag.visited.add(key);
+    applyPencilDrag(lineIdx, tactIdx, cellIdx);
+    render();
+  }
+}
+
+function onCellMouseUp() {
+  if (!drag.active) return;
+
+  if (drag.tool === 'marker') {
+    finalizeMarkerDrag();
+  } else if (drag.tool === 'pencil') {
+    const results = validateAllColors();
+    if (Object.keys(results).length > 0) {
+      const firstKey = Object.keys(results)[0];
+      if (results[firstKey] === 'template_lost') {
+        showToast('Запрос стёрт. Все группы этого цвета тоже сброшены', 'warning');
+      } else {
+        showToast('Часть групп сброшена: нарушены правила рифмы', 'warning');
+      }
+    }
+    if (drag.startSnapshot) pushHistory(drag.startSnapshot);
+    render(); updateToolbarUI();
+  }
+
+  drag.active = false; drag.tool = null; drag.mode = null; drag.color = null;
+  drag.groupId = null; drag.visited = null; drag.startSnapshot = null; drag.startKey = null;
+}
+
+function finalizeMarkerDrag() {
+  const color = drag.color;
+  const wasRemove = drag.mode === 'remove';
+  const reason = validateColorGroups(color);
+
+  if (wasRemove) {
+    if (drag.startSnapshot) pushHistory(drag.startSnapshot);
+    if (reason) {
+      const msg = reason === 'empty_edges'
+        ? 'Пустые слоги не могут быть на краю рифмы — группа сброшена'
+        : reason === 'no_stressed'
+        ? 'Группа без ударного слога сброшена'
+        : reason === 'not_match'
+        ? 'Группа не соответствует шаблону и сброшена'
+        : reason === 'template_lost'
+        ? 'Запрос стёрт. Все группы этого цвета тоже сброшены'
+        : 'Группа сброшена';
+      showToast(msg, 'warning');
+    }
+    updateToolbarUI(); render();
+    return;
+  }
+
+  if (reason) {
+    if (drag.startSnapshot) restoreSnapshot(drag.startSnapshot);
+
+    if (reason === 'empty_edges') showToast('Пустые слоги не могут быть на краю рифмы');
+    else if (reason === 'no_stressed') showToast('Группа без ударного слога не может быть рифмой');
+    else if (reason === 'not_match') showToast('Группа не соответствует шаблону рифмы');
+    else if (reason === 'template_lost') showToast('Запрос стёрт', 'warning');
+    else showToast('Не удалось создать группу');
+    updateToolbarUI(); render();
+    return;
+  }
+
+  if (drag.startSnapshot) pushHistory(drag.startSnapshot);
+  updateToolbarUI(); render();
+}
+
+function flashProtected(lineIdx, tactIdx, cellIdx) {
+  const canvas = document.getElementById('canvas');
+  const lineEl = canvas.children[lineIdx];
+  if (!lineEl) return;
+  const tactEl = lineEl.querySelectorAll('.tact')[tactIdx];
+  if (!tactEl) return;
+  const cellEl = tactEl.querySelectorAll('.cell')[cellIdx];
+  if (!cellEl) return;
+  cellEl.classList.add('mark-protected');
+  setTimeout(() => cellEl.classList.remove('mark-protected'), 300);
+}
+
+document.addEventListener('mouseup', () => { if (drag.active) onCellMouseUp(); });
+
+function onCellContextMenu(lineIdx, tactIdx, cellIdx, e) {
+  e.preventDefault();
+  setActiveLine(lineIdx);
+  const cell = getCellAt(lineIdx, tactIdx, cellIdx);
+  if (!cell) return;
+
+  if (state.tool === 'pencil') {
+    if (cell.state === 'empty' && !cell.mark) return;
+    act(() => {
+      cell.state = 'empty';
+      cell.text = null;
+      const results = validateAllColors();
+      if (Object.keys(results).length > 0) {
+        const firstKey = Object.keys(results)[0];
+        if (results[firstKey] === 'template_lost') {
+          showToast('Запрос стёрт. Все группы этого цвета тоже сброшены', 'warning');
+        } else {
+          showToast('Часть групп сброшена: нарушены правила рифмы', 'warning');
+        }
+      }
+      render();
+    });
+    updateToolbarUI();
+    return;
+  }
+
+  if (state.tool === 'marker') {
+    const color = cell.mark;
+    if (!color) return;
+    if (!isMarkerEdgeOfGroup(lineIdx, tactIdx, cellIdx, color)) {
+      showToast('Снимать маркер можно только с края группы');
+      flashProtected(lineIdx, tactIdx, cellIdx);
+      return;
+    }
+    act(() => {
+      cell.mark = null;
+      cell.markGroup = null;
+      const reason = validateColorGroups(color);
+      if (reason) {
+        const msg = reason === 'empty_edges'
+          ? 'Пустые слоги на краю — группа сброшена'
+          : reason === 'no_stressed'
+          ? 'Группа без ударного слога сброшена'
+          : reason === 'not_match'
+          ? 'Группа не соответствует шаблону и сброшена'
+          : reason === 'template_lost'
+          ? 'Запрос стёрт. Все группы этого цвета тоже сброшены'
+          : 'Группа сброшена';
+        showToast(msg, 'warning');
+      }
+      render();
+    });
+    updateToolbarUI();
+  }
+}
+
+let openMenu = null;
+function closeTactMenu() { if (openMenu) { openMenu.remove(); openMenu = null; } }
+function openTactMenu(lineIdx, tactIdx, anchorEl) {
+  closeTactMenu();
+  const tact = state.lines[lineIdx].tacts[tactIdx];
+  const menu = document.createElement('div');
+  menu.className = 'tact-menu';
+
+  const patternsForSize = Object.keys(PATTERNS_BY_SIZE[tact.size] || {});
+  const currentValue = tact.mode === 'custom' ? 'Кастомный' : tact.standard.pattern;
+
+  let html = `<button class="close-menu" title="Закрыть">×</button>`;
+  html += `<h4>Размер такта</h4>
+    <select id="size-select">
+      ${AVAILABLE_SIZES.map(s => `<option value="${s}" ${s === tact.size ? 'selected' : ''}>${s}/4</option>`).join('')}
+    </select>`;
+  html += `<h4>Режим такта</h4>
+    <select id="mode-select">
+      ${patternsForSize.map(p => `<option value="${p}" ${p === currentValue ? 'selected' : ''}>${p}</option>`).join('')}
+      <option value="Кастомный" ${currentValue === 'Кастомный' ? 'selected' : ''}>Кастомный</option>
+    </select>`;
+  html += `<button id="btn-clear-tact" style="width:100%;background:#4a2525;border-color:#6d3a3a;">Очистить такт</button>`;
+
+  menu.innerHTML = html;
+
+  menu.querySelector('.close-menu').addEventListener('click', (e) => { e.stopPropagation(); closeTactMenu(); });
+  menu.querySelector('#size-select').addEventListener('change', (e) => {
+    changeTactSize(lineIdx, tactIdx, parseInt(e.target.value));
+    openTactMenu(lineIdx, tactIdx, anchorEl);
+  });
+  menu.querySelector('#mode-select').addEventListener('change', (e) => {
+    changeTactMode(lineIdx, tactIdx, e.target.value);
+    openTactMenu(lineIdx, tactIdx, anchorEl);
+  });
+  menu.querySelector('#btn-clear-tact').addEventListener('click', (e) => {
+    e.stopPropagation();
+    clearTact(lineIdx, tactIdx);
+    closeTactMenu();
+  });
+  menu.addEventListener('click', (e) => e.stopPropagation());
+  anchorEl.parentElement.appendChild(menu);
+  openMenu = menu;
+}
+
+function render() {
+  const canvas = document.getElementById('canvas');
+  canvas.innerHTML = '';
+  state.lines.forEach((line, lineIdx) => {
+    const lineEl = document.createElement('div');
+    lineEl.className = 'line' + (lineIdx === state.activeLine ? ' active' : '');
+
+    const header = document.createElement('div');
+    header.className = 'line-header';
+    const modeTag = isLineCustom(line)
+      ? '<span class="line-mode-tag">Кастомная</span>'
+      : '<span class="line-mode-tag" style="background:#2a2a4a;color:#8888aa">Стандартная</span>';
+    header.innerHTML = `<span class="line-label">Строка ${lineIdx + 1}</span>${modeTag}`;
+    lineEl.appendChild(header);
+
+    const tactsEl = document.createElement('div');
+    tactsEl.className = 'tacts';
+
+    line.tacts.forEach((tact, tactIdx) => {
+      const active = getActiveTact(tact);
+      const tactEl = document.createElement('div');
+      tactEl.className = 'tact' + (tact.mode === 'custom' ? ' is-custom' : '');
+
+      const label = document.createElement('div');
+      label.className = 'tact-label';
+      if (tact.mode === 'custom') label.textContent = `Кастомный ${tact.size}/4`;
+      else label.textContent = `${tact.standard.pattern} ${tact.size}/4`;
+      label.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setActiveLine(lineIdx);
+        openTactMenu(lineIdx, tactIdx, label);
+      });
+      tactEl.appendChild(label);
+
+      const cellsEl = document.createElement('div');
+      cellsEl.className = 'cells size-' + tact.size;
+
+      active.cells.forEach((cell, cellIdx) => {
+        const cellEl = document.createElement('div');
+        let cls = 'cell ' + cell.state;
+        if (cell.mark) {
+          cls += ' mark-' + cell.mark;
+          const tpl = state.markerTemplates[cell.mark];
+          if (tpl && cell.markGroup === tpl.groupId) cls += ' template';
+          else cls += ' target';
+        }
+        cellEl.className = cls;
+        if (cell.text) cellEl.textContent = cell.text;
+
+        cellEl.addEventListener('mousedown', (e) => onCellMouseDown(lineIdx, tactIdx, cellIdx, e));
+        cellEl.addEventListener('mouseenter', () => onCellMouseEnter(lineIdx, tactIdx, cellIdx));
+        cellEl.addEventListener('mouseup', () => onCellMouseUp());
+        cellEl.addEventListener('contextmenu', (e) => onCellContextMenu(lineIdx, tactIdx, cellIdx, e));
+
+        cellsEl.appendChild(cellEl);
+      });
+
+      tactEl.appendChild(cellsEl);
+      tactsEl.appendChild(tactEl);
+    });
+
+    lineEl.appendChild(tactsEl);
+    lineEl.addEventListener('click', () => setActiveLine(lineIdx));
+    canvas.appendChild(lineEl);
+  });
+  updateUndoRedoButtons();
+}
+
+function updateToolbarUI() {
+  document.querySelectorAll('.tool-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tool === state.tool);
+  });
+  document.querySelectorAll('.color-dot').forEach(dot => {
+    const color = dot.dataset.color;
+    const isActive = state.tool === 'marker' && color === state.markerColor;
+    dot.classList.toggle('active', isActive);
+    let badge = dot.querySelector('.pattern-badge');
+    const tpl = state.markerTemplates[color];
+    if (tpl) {
+      if (!badge) {
+        badge = document.createElement('span');
+        badge.className = 'pattern-badge';
+        dot.appendChild(badge);
+      }
+      badge.textContent = `${tpl.length}: ${describeTemplate(tpl)}`;
+    } else if (badge) {
+      badge.remove();
+    }
+  });
+  updateUndoRedoButtons();
+}
+
+document.getElementById('btn-add-line').addEventListener('click', addLine);
+document.getElementById('btn-undo').addEventListener('click', undo);
+document.getElementById('btn-redo').addEventListener('click', redo);
+document.getElementById('btn-reset-patterns').addEventListener('click', () => {
+  act(() => {
+    MARKER_COLORS.forEach(c => state.markerTemplates[c] = null);
+    updateToolbarUI(); render();
+    showToast('Все шаблоны рифм сброшены', 'warning');
+  });
+});
+
+document.querySelectorAll('.tool-btn').forEach(btn => {
+  btn.addEventListener('click', () => setTool(btn.dataset.tool));
+});
+document.querySelectorAll('.color-dot').forEach(dot => {
+  dot.addEventListener('click', () => { setMarkerColor(dot.dataset.color); setTool('marker'); });
+});
+
+document.addEventListener('keydown', (e) => {
+  const isCtrl = e.ctrlKey || e.metaKey;
+
+  if (isCtrl && !e.shiftKey && (e.key === 'z' || e.key === 'Z' || e.key === 'я' || e.key === 'Я')) {
+    e.preventDefault();
+    undo();
+    return;
+  }
+  if (isCtrl && (e.key === 'y' || e.key === 'Y' || e.key === 'н' || e.key === 'Н')) {
+    e.preventDefault();
+    redo();
+    return;
+  }
+  if (isCtrl && e.shiftKey && (e.key === 'z' || e.key === 'Z' || e.key === 'я' || e.key === 'Я')) {
+    e.preventDefault();
+    redo();
+    return;
+  }
+
+  if (e.key === 'Escape') closeTactMenu();
+});
+
+document.addEventListener('click', (e) => {
+  if (openMenu && !openMenu.contains(e.target)) closeTactMenu();
+});
+document.getElementById('canvas').addEventListener('contextmenu', (e) => e.preventDefault());
+
+state.lines.push(createLine());
+render();
+updateToolbarUI();
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+nemo_env/
+env/
+.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Тесты и кеши
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ОС
+.DS_Store
+Thumbs.db
+
+# Большие файлы (модели)
+*.model
+*.model.*
+*.nemo
+*.kv
+*.kv.*
+*.npy
+*.tar
+*.tar.gz
+*.zip
+*.parquet
+
+# Данные (корпус и результаты)
+slang_datasets/
+*.jsonl
+*.csv
+phoneme_index.json
+
+# Логи и временные
+*.log
+*.tmp
+nohup.out
+
+# Секреты
+.env
+*.key
+credentials.json
