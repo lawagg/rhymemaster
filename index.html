@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Студия ритмики — прототип v20</title>
+<title>Студия ритмики — прототип v21.5</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -46,6 +46,29 @@
     padding: 1px 6px; border: 1px solid #9d9dff;
     white-space: nowrap; pointer-events: none;
   }
+
+  .text-pipeline {
+    display: none;
+    margin-bottom: 20px; padding: 14px;
+    background: #252540; border: 1px solid #3d3d5c; border-radius: 10px;
+    align-items: center; gap: 12px; flex-wrap: wrap;
+  }
+  .text-pipeline.visible { display: flex; }
+  .text-pipeline input {
+    flex: 1; min-width: 250px;
+    background: #1e1e33; color: #e8e8e8;
+    border: 1px solid #3d3d5c; border-radius: 6px;
+    padding: 8px 12px; font-size: 14px;
+  }
+  .text-pipeline input:focus { outline: none; border-color: #5d5dff; }
+  .syllable-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .syllable-chip {
+    background: #2d2d4a; border: 1px solid #3d3d5c; border-radius: 4px;
+    padding: 4px 10px; font-size: 13px; transition: all 0.15s;
+    display: flex; align-items: center; gap: 4px;
+  }
+  .syllable-chip.used { opacity: 0.3; text-decoration: line-through; }
+  .syllable-chip .stress-mark { color: #ff6b6b; font-weight: 700; }
 
   button {
     background: #2d2d4a; color: #e8e8e8; border: 1px solid #3d3d5c;
@@ -119,6 +142,10 @@
   .cell.unstressed { background: #4a4a6e; }
   .cell.empty {
     background: #15152a; border: 2px dashed #2d2d4a;
+  }
+
+  .cell.stress-wrong {
+    box-shadow: 0 0 0 3px #ff9800, 0 0 12px 4px rgba(255, 152, 0, 0.6) !important;
   }
 
   .cell.template.mark-green { box-shadow: 0 0 0 5px #22ff88, 0 0 22px 7px rgba(34,255,136,0.85); }
@@ -199,30 +226,11 @@
     padding: 1px 6px; border-radius: 4px; font-family: monospace;
     font-size: 12px;
   }
-  .hint .legend { display: inline-flex; align-items: center; gap: 6px; margin-right: 16px; }
-  .hint .legend .dot {
-    width: 14px; height: 14px; border-radius: 4px;
-    background: #4a4a6e; display: inline-block;
-  }
-  .hint .legend .dot.template-demo {
-    box-shadow: 0 0 0 3px #22ff88, 0 0 12px 4px rgba(34,255,136,0.7);
-    position: relative;
-  }
-  .hint .legend .dot.template-demo::before {
-    content: '';
-    position: absolute;
-    top: -5px; left: 50%; transform: translateX(-50%);
-    width: 5px; height: 5px; border-radius: 50%;
-    background: white;
-  }
-  .hint .legend .dot.target-demo {
-    box-shadow: 0 0 0 2px #22ff88, 0 0 6px 2px rgba(34,255,136,0.4);
-  }
 </style>
 </head>
 <body>
 
-<h1>🎵 Студия ритмики — прототип v20</h1>
+<h1>🎵 Студия ритмики — прототип v21.5</h1>
 
 <div class="toolbar-top">
   <button class="tool-btn active" data-tool="pencil">✏️ Карандаш</button>
@@ -242,22 +250,20 @@
   <button id="btn-reset-patterns">✕ Сбросить шаблоны</button>
 </div>
 
+<div class="text-pipeline" id="text-pipeline">
+  <input type="text" id="text-input" placeholder="Введите слово или фразу (апостроф = ударение, например чи'лить)" />
+  <div class="syllable-chips" id="syllable-chips"></div>
+</div>
+
 <div id="canvas"></div>
 <div class="toast" id="toast"></div>
 
 <div class="hint">
   <b>Горячие клавиши:</b> <code>Ctrl+Z</code> — Undo, <code>Ctrl+Y</code> или <code>Ctrl+Shift+Z</code> — Redo.<br>
   <br>
-  <b>Режим — свойство каждого такта.</b> Кликни на плашку такта → выбери «Хорей», «Ямб», ..., или «Кастомный».<br>
-  <br>
-  <b>Как рисовать:</b><br>
-  • <b>Обычный drag</b> — новая группа.<br>
-  • <code>Shift</code> + <b>drag</b> — продлить существующую группу того же цвета.<br>
-  • <b>ЛКМ на ячейке группы</b> — снять маркер. <b>ПКМ</b> — снять с одной ячейки.<br>
-  <br>
-  <b>Легенда:</b>
-  <span class="legend"><span class="dot template-demo"></span> Запрос (шаблон)</span>
-  <span class="legend"><span class="dot target-demo"></span> Цель</span>
+  <b>Инструмент «Текст»:</b> Введи слово в конвейер. Клик по ячейке — вставит следующий слог.
+  Повторный клик по ячейке — вернёт слог обратно в конвейер.
+  Апостроф <code>'</code> после гласной ставит ударение (например, <code>чи'лить</code>).<br>
 </div>
 
 <script>
@@ -274,28 +280,103 @@ const PATTERNS_BY_SIZE = {
 };
 const AVAILABLE_SIZES = [2, 3, 4, 6, 8];
 const MARKER_COLORS = ['green', 'blue', 'purple', 'yellow'];
+const VOWELS = 'аеёиоуыэюя';
 
 let nextGroupId = 1;
 
 const state = {
   lines: [], activeLine: 0,
   tool: 'pencil', markerColor: 'green',
-  history: [],
-  future: [],
+  history: [], future: [],
   markerTemplates: { green: null, blue: null, purple: null, yellow: null },
+  textPipeline: {
+    syllables: [],
+    rawText: '',
+  },
 };
+
+function splitIntoSyllables(text) {
+  if (!text) return [];
+  const cleanText = text.replace(/[\s\-]+/g, '');
+  if (!cleanText) return [];
+
+  const hasApostrophe = /['’]/.test(cleanText);
+  const parts = [];
+  let current = '';
+  let currentStressed = false;
+  
+  for (let i = 0; i < cleanText.length; i++) {
+    let ch = cleanText[i];
+    if (ch === "'" || ch === '’') {
+      currentStressed = true;
+      continue;
+    }
+    const isVowel = VOWELS.includes(ch.toLowerCase());
+    if (isVowel && /[аеёиоуыэюя]/i.test(current)) {
+      parts.push({ text: current, stressed: hasApostrophe ? currentStressed : null });
+      current = ch;
+      currentStressed = false;
+    } else {
+      current += ch;
+    }
+  }
+  if (current) {
+    parts.push({ text: current, stressed: hasApostrophe ? currentStressed : null });
+  }
+  
+  for (let i = 0; i < parts.length - 1; i++) {
+    const next = parts[i+1];
+    if (next && VOWELS.includes(next.text[0].toLowerCase())) {
+      const cur = parts[i];
+      const lastChar = cur.text[cur.text.length - 1];
+      if (lastChar && !VOWELS.includes(lastChar.toLowerCase())) {
+        cur.text = cur.text.slice(0, -1);
+        next.text = lastChar + next.text;
+      }
+    }
+  }
+  
+  return parts.filter(p => p.text.length > 0);
+}
+
+function computeStressWrong(cellState, syllableStressed) {
+  if (syllableStressed === null) return false;
+  if (cellState === 'stressed' && !syllableStressed) return true;
+  if (cellState === 'unstressed' && syllableStressed) return true;
+  return false;
+}
 
 function makeCellsFromPattern(size, pattern) {
   const pat = PATTERNS_BY_SIZE[size][pattern];
   return pat.map(stressed => ({
     state: stressed ? 'stressed' : 'unstressed',
-    text: null, mark: null, markGroup: null,
+    text: null, textStress: null, stressWrong: false,
+    mark: null, markGroup: null,
   }));
 }
 function makeEmptyCells(size) {
   return Array.from({ length: size }, () => ({
-    state: 'empty', text: null, mark: null, markGroup: null,
+    state: 'empty', text: null, textStress: null, stressWrong: false,
+    mark: null, markGroup: null,
   }));
+}
+
+function applyPatternToCells(cells, size, pattern) {
+  const pat = PATTERNS_BY_SIZE[size][pattern];
+  const newCells = [];
+  for (let i = 0; i < size; i++) {
+    const old = cells[i] || {};
+    const cellState = pat[i] ? 'stressed' : 'unstressed';
+    newCells.push({
+      state: cellState,
+      text: old.text || null,
+      textStress: old.textStress || null,
+      stressWrong: computeStressWrong(cellState, old.textStress),
+      mark: old.mark || null,
+      markGroup: old.markGroup || null,
+    });
+  }
+  return newCells;
 }
 
 function createTact() {
@@ -317,7 +398,7 @@ function isLineCustom(line) {
   return line.tacts.some(t => t.mode === 'custom');
 }
 
-function cloneCell(c) { return { state: c.state, text: c.text, mark: c.mark, markGroup: c.markGroup }; }
+function cloneCell(c) { return { ...c }; }
 function cloneTact(t) {
   return {
     mode: t.mode,
@@ -335,6 +416,10 @@ function getSnapshot() {
     tool: state.tool, markerColor: state.markerColor,
     markerTemplates: JSON.parse(JSON.stringify(state.markerTemplates)),
     nextGroupId: nextGroupId,
+    textPipeline: {
+      syllables: JSON.parse(JSON.stringify(state.textPipeline.syllables)),
+      rawText: state.textPipeline.rawText,
+    },
   };
 }
 function pushHistory(snap) {
@@ -354,7 +439,15 @@ function restoreSnapshot(snap) {
   state.tool = snap.tool; state.markerColor = snap.markerColor;
   state.markerTemplates = snap.markerTemplates;
   if (snap.nextGroupId) nextGroupId = snap.nextGroupId;
-  render(); updateToolbarUI();
+  if (snap.textPipeline) {
+    state.textPipeline = {
+      syllables: JSON.parse(JSON.stringify(snap.textPipeline.syllables)),
+      rawText: snap.textPipeline.rawText || '',
+    };
+    const inputEl = document.getElementById('text-input');
+    if (inputEl) inputEl.value = state.textPipeline.rawText;
+  }
+  render(); updateToolbarUI(); updateTextPipelineUI();
 }
 
 function undo() {
@@ -390,18 +483,6 @@ function showToast(message, type = 'error') {
   toastTimer = setTimeout(() => { t.className = 'toast'; }, 3000);
 }
 
-function getAllCellsFlat() {
-  const flat = [];
-  state.lines.forEach((line, lineIdx) => {
-    line.tacts.forEach((tact, tactIdx) => {
-      const active = getActiveTact(tact);
-      active.cells.forEach((cell, cellIdx) => {
-        flat.push({ lineIdx, tactIdx, cellIdx, cell });
-      });
-    });
-  });
-  return flat;
-}
 function getCellAt(lineIdx, tactIdx, cellIdx) {
   const tact = state.lines[lineIdx]?.tacts[tactIdx];
   if (!tact) return null;
@@ -597,7 +678,11 @@ function applyPencilDrag(lineIdx, tactIdx, cellIdx) {
   const tact = state.lines[lineIdx].tacts[tactIdx];
   const active = getActiveTact(tact);
   const cell = active.cells[cellIdx];
-  if (drag.pencilTarget === 'empty') cell.state = 'empty';
+  if (drag.pencilTarget === 'empty') {
+    cell.state = 'empty';
+    cell.text = null;
+    cell.textStress = null;
+  }
   else if (drag.pencilTarget === 'pattern') {
     const pat = PATTERNS_BY_SIZE[tact.size][active.pattern];
     cell.state = pat[cellIdx] ? 'stressed' : 'unstressed';
@@ -606,6 +691,7 @@ function applyPencilDrag(lineIdx, tactIdx, cellIdx) {
     else if (cell.state === 'stressed') cell.state = 'unstressed';
     else cell.state = 'empty';
   }
+  cell.stressWrong = computeStressWrong(cell.state, cell.textStress);
 }
 
 function addLine() {
@@ -615,7 +701,7 @@ function addLine() {
     render();
   });
 }
-function setTool(tool) { state.tool = tool; updateToolbarUI(); render(); }
+function setTool(tool) { state.tool = tool; updateToolbarUI(); updateTextPipelineUI(); render(); }
 function setMarkerColor(color) { state.markerColor = color; updateToolbarUI(); }
 function setActiveLine(idx) { state.activeLine = idx; }
 
@@ -631,7 +717,8 @@ function changeTactSize(lineIdx, tactIdx, newSize) {
         const pat = PATTERNS_BY_SIZE[newSize][tact.standard.pattern];
         newStd.push({
           state: pat ? (pat[i] ? 'stressed' : 'unstressed') : 'empty',
-          text: null, mark: null, markGroup: null,
+          text: null, textStress: null, stressWrong: false,
+          mark: null, markGroup: null,
         });
       }
     }
@@ -641,7 +728,7 @@ function changeTactSize(lineIdx, tactIdx, newSize) {
     const newCust = [];
     for (let i = 0; i < newSize; i++) {
       if (i < oldCustCells.length) newCust.push({ ...oldCustCells[i] });
-      else newCust.push({ state: 'empty', text: null, mark: null, markGroup: null });
+      else newCust.push({ state: 'empty', text: null, textStress: null, stressWrong: false, mark: null, markGroup: null });
     }
     tact.custom.cells = newCust;
 
@@ -670,25 +757,33 @@ function changeTactMode(lineIdx, tactIdx, selection) {
         const newCust = [];
         for (let i = 0; i < tact.size; i++) {
           if (i < tact.custom.cells.length) newCust.push({ ...tact.custom.cells[i] });
-          else newCust.push({ state: 'empty', text: null, mark: null, markGroup: null });
+          else newCust.push({ state: 'empty', text: null, textStress: null, stressWrong: false, mark: null, markGroup: null });
         }
         tact.custom.cells = newCust;
       }
     } else {
       if (newSize !== null) {
         tact.size = newSize;
-        tact.standard.pattern = selection;
-        tact.standard.cells = makeCellsFromPattern(newSize, selection);
+        
+        const oldStd = tact.standard.cells;
+        const newStd = [];
+        for (let i = 0; i < newSize; i++) {
+          if (i < oldStd.length) newStd.push({ ...oldStd[i] });
+          else newStd.push({ state: 'empty', text: null, textStress: null, stressWrong: false, mark: null, markGroup: null });
+        }
+        tact.standard.cells = newStd;
+        
+        const oldCust = tact.custom.cells;
         const newCust = [];
         for (let i = 0; i < newSize; i++) {
-          if (i < tact.custom.cells.length) newCust.push({ ...tact.custom.cells[i] });
-          else newCust.push({ state: 'empty', text: null, mark: null, markGroup: null });
+          if (i < oldCust.length) newCust.push({ ...oldCust[i] });
+          else newCust.push({ state: 'empty', text: null, textStress: null, stressWrong: false, mark: null, markGroup: null });
         }
         tact.custom.cells = newCust;
-      } else {
-        tact.standard.pattern = selection;
-        tact.standard.cells = makeCellsFromPattern(tact.size, selection);
       }
+      
+      tact.standard.pattern = selection;
+      tact.standard.cells = applyPatternToCells(tact.standard.cells, tact.size, selection);
       tact.mode = 'standard';
     }
 
@@ -701,7 +796,12 @@ function clearTact(lineIdx, tactIdx) {
   act(() => {
     const tact = state.lines[lineIdx].tacts[tactIdx];
     const active = getActiveTact(tact);
-    active.cells.forEach(c => { c.state = 'empty'; c.text = null; });
+    active.cells.forEach(c => {
+      c.state = 'empty';
+      c.text = null;
+      c.textStress = null;
+      c.stressWrong = false;
+    });
     validateAllColors();
     render();
   });
@@ -721,6 +821,54 @@ function onCellMouseDown(lineIdx, tactIdx, cellIdx, e) {
 
   const cell = getCellAt(lineIdx, tactIdx, cellIdx);
   if (!cell) return;
+
+  if (state.tool === 'text') {
+    if (cell.state === 'empty') {
+      showToast('В пустую ячейку нельзя поставить слог. Выберите ударную или безударную.', 'warning');
+      return;
+    }
+    if (cell.text) {
+      act(() => {
+        cell.text = null;
+        cell.textStress = null;
+        cell.stressWrong = false;
+        render();
+      });
+      return;
+    }
+
+    const cellCounts = {};
+    state.lines.forEach(line => line.tacts.forEach(tact => {
+      const active = getActiveTact(tact);
+      active.cells.forEach(c => {
+        if (c.text) cellCounts[c.text] = (cellCounts[c.text] || 0) + 1;
+      });
+    }));
+
+    const tempCounts = { ...cellCounts };
+    let nextSyl = null;
+    for (const syl of state.textPipeline.syllables) {
+      if (tempCounts[syl.text] > 0) {
+        tempCounts[syl.text]--;
+      } else {
+        nextSyl = syl;
+        break;
+      }
+    }
+
+    if (!nextSyl) {
+      showToast('Все слоги уже расставлены. Введите новое слово.', 'warning');
+      return;
+    }
+
+    act(() => {
+      cell.text = nextSyl.text;
+      cell.textStress = nextSyl.stressed;
+      cell.stressWrong = computeStressWrong(cell.state, cell.textStress);
+      render();
+    });
+    return;
+  }
 
   if (state.tool === 'marker') {
     const color = state.markerColor;
@@ -899,10 +1047,12 @@ function onCellContextMenu(lineIdx, tactIdx, cellIdx, e) {
   if (!cell) return;
 
   if (state.tool === 'pencil') {
-    if (cell.state === 'empty' && !cell.mark) return;
+    if (cell.state === 'empty' && !cell.mark && !cell.text) return;
     act(() => {
       cell.state = 'empty';
       cell.text = null;
+      cell.textStress = null;
+      cell.stressWrong = false;
       const results = validateAllColors();
       if (Object.keys(results).length > 0) {
         const firstKey = Object.keys(results)[0];
@@ -1038,6 +1188,10 @@ function render() {
           if (tpl && cell.markGroup === tpl.groupId) cls += ' template';
           else cls += ' target';
         }
+        if (cell.stressWrong) {
+          cls += ' stress-wrong';
+          cellEl.title = 'Внимание: ломается естественное ударение слова';
+        }
         cellEl.className = cls;
         if (cell.text) cellEl.textContent = cell.text;
 
@@ -1058,6 +1212,7 @@ function render() {
     canvas.appendChild(lineEl);
   });
   updateUndoRedoButtons();
+  updateTextPipelineUI();
 }
 
 function updateToolbarUI() {
@@ -1083,6 +1238,45 @@ function updateToolbarUI() {
   });
   updateUndoRedoButtons();
 }
+
+function updateTextPipelineUI() {
+  const pipelineEl = document.getElementById('text-pipeline');
+  if (!pipelineEl) return;
+  pipelineEl.classList.toggle('visible', state.tool === 'text');
+  if (state.tool !== 'text') return;
+
+  const chipsEl = document.getElementById('syllable-chips');
+  chipsEl.innerHTML = '';
+
+  const cellCounts = {};
+  state.lines.forEach(line => line.tacts.forEach(tact => {
+    const active = getActiveTact(tact);
+    active.cells.forEach(c => {
+      if (c.text) cellCounts[c.text] = (cellCounts[c.text] || 0) + 1;
+    });
+  }));
+
+  const tempCounts = { ...cellCounts };
+
+  state.textPipeline.syllables.forEach((syl, i) => {
+    const chip = document.createElement('span');
+    let isUsed = false;
+    if (tempCounts[syl.text] > 0) {
+      tempCounts[syl.text]--;
+      isUsed = true;
+    }
+    chip.className = 'syllable-chip' + (isUsed ? ' used' : '');
+    chip.innerHTML = syl.text + (syl.stressed ? '<span class="stress-mark">´</span>' : '');
+    chipsEl.appendChild(chip);
+  });
+}
+
+document.getElementById('text-input').addEventListener('input', (e) => {
+  const newText = e.target.value;
+  state.textPipeline.rawText = newText;
+  state.textPipeline.syllables = splitIntoSyllables(newText);
+  updateTextPipelineUI();
+});
 
 document.getElementById('btn-add-line').addEventListener('click', addLine);
 document.getElementById('btn-undo').addEventListener('click', undo);
@@ -1132,6 +1326,7 @@ document.getElementById('canvas').addEventListener('contextmenu', (e) => e.preve
 state.lines.push(createLine());
 render();
 updateToolbarUI();
+updateTextPipelineUI();
 </script>
 </body>
 </html>
