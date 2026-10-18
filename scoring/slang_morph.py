@@ -301,6 +301,90 @@ class SlangMorph:
             reflexive = True
             base = base[:-2]
 
+        # -ивать/-ывать: впизживать → впизживаю, подкалывать → подкалываю
+        if base.endswith(('ивать', 'ывать')):
+            stem_full = base[:-2]  # впизжива, подкалыва
+            forms = {
+                '1per_sing': stem_full + 'ю',
+                '2per_sing': stem_full + 'ешь',
+                '3per_sing': stem_full + 'ет',
+                '1per_plur': stem_full + 'ем',
+                '2per_plur': stem_full + 'ете',
+                '3per_plur': stem_full + 'ют',
+            }
+            if reflexive:
+                suffix_map = {
+                    '1per_sing': 'сь', '2per_sing': 'ся', '3per_sing': 'ся',
+                    '1per_plur': 'ся', '2per_plur': 'сь', '3per_plur': 'ся',
+                }
+                forms = {k: v + suffix_map[k] for k, v in forms.items()}
+            for key, form in forms.items():
+                person = key.split('_')[0]
+                number = key.split('_')[1]
+                add(form, f'наст. {person[0]}л. {number[:2]}.', 'pres')
+
+            past_stem = base[:-2]
+            for form, label in [
+                (past_stem + 'л', 'прош. м.'),
+                (past_stem + 'ла', 'прош. ж.'),
+                (past_stem + 'ло', 'прош. с.'),
+                (past_stem + 'ли', 'прош. мн.'),
+            ]:
+                if reflexive:
+                    form = form + 'ся' if form.endswith('л') else form + 'сь'
+                add(form, label, 'past')
+
+            imp_sing = stem_full + 'й'
+            imp_plur = stem_full + 'йте'
+            if reflexive:
+                imp_sing += 'ся'
+                imp_plur += 'сь'
+            add(imp_sing, 'повел. ед.', 'impr')
+            add(imp_plur, 'повел. мн.', 'impr')
+            return results
+
+        # -овать/-евать — особая парадигма: блядовать → блядую
+        if base.endswith(('овать', 'евать')):
+            stem = base[:-5]
+            forms = {
+                '1per_sing': stem + 'ую',
+                '2per_sing': stem + 'уешь',
+                '3per_sing': stem + 'ует',
+                '1per_plur': stem + 'уем',
+                '2per_plur': stem + 'уете',
+                '3per_plur': stem + 'уют',
+            }
+            if reflexive:
+                suffix_map = {
+                    '1per_sing': 'сь', '2per_sing': 'ся', '3per_sing': 'ся',
+                    '1per_plur': 'ся', '2per_plur': 'сь', '3per_plur': 'ся',
+                }
+                forms = {k: v + suffix_map[k] for k, v in forms.items()}
+            for key, form in forms.items():
+                person = key.split('_')[0]
+                number = key.split('_')[1]
+                add(form, f'наст. {person[0]}л. {number[:2]}.', 'pres')
+
+            past_stem = base[:-2]
+            for form, label in [
+                (past_stem + 'л', 'прош. м.'),
+                (past_stem + 'ла', 'прош. ж.'),
+                (past_stem + 'ло', 'прош. с.'),
+                (past_stem + 'ли', 'прош. мн.'),
+            ]:
+                if reflexive:
+                    form = form + 'ся' if form.endswith('л') else form + 'сь'
+                add(form, label, 'past')
+
+            imp_sing = stem + 'уй'
+            imp_plur = stem + 'уйте'
+            if reflexive:
+                imp_sing += 'ся'
+                imp_plur += 'тесь'
+            add(imp_sing, 'повел. ед.', 'impr')
+            add(imp_plur, 'повел. мн.', 'impr')
+            return results
+
         if base.endswith('ить'):
             stem = base[:-3]
             conj = 2
@@ -358,20 +442,26 @@ class SlangMorph:
         ]
         for form, label in past_forms:
             if reflexive:
-                form = form + 'сь' if form.endswith('л') else form + 'ся'
+                # м.р. на -л → -лся, остальные → -лась/-лось/-лись
+                form = form + 'ся' if form.endswith('л') else form + 'сь'
             add(form, label, 'past')
 
-        if conj == 2:
-            imp_sing = base[:-3] + 'и'
-            imp_plur = base[:-3] + 'ите'
-        else:
-            v = base[-2]
-            imp_sing = base[:-3] + v + 'й'
-            imp_plur = base[:-3] + v + 'йте'
-
         if reflexive:
-            imp_sing += 'сь'
-            imp_plur += 'сь'
+            if conj == 2:
+                imp_sing = base[:-3] + 'ься'
+                imp_plur = base[:-3] + 'ьтесь'
+            else:
+                v = base[-2]
+                imp_sing = base[:-3] + v + 'йся'
+                imp_plur = base[:-3] + v + 'йтесь'
+        else:
+            if conj == 2:
+                imp_sing = base[:-3] + 'и'
+                imp_plur = base[:-3] + 'ите'
+            else:
+                v = base[-2]
+                imp_sing = base[:-3] + v + 'й'
+                imp_plur = base[:-3] + v + 'йте'
 
         add(imp_sing, 'повел. ед.', 'impr')
         add(imp_plur, 'повел. мн.', 'impr')

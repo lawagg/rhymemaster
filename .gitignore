@@ -82,3 +82,8 @@ _tmp_slang/
 # Копии в корне (основные в scoring/)
 /mat_dictionary_clean.txt
 /rude_dictionary.txt
+
+# Рабочие файлы приставочных (результат в scoring/prefixes_dictionary.txt)
+prefixes_to_add.txt
+verbs_for_prefixes.txt
+verbs_with_prefixes.txt
