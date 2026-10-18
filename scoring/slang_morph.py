@@ -38,6 +38,13 @@ ETALONS = {
         'nomn': 'я', 'gent': 'и', 'datv': 'е', 'accs': 'ю', 'ablt': 'ей', 'loct': 'е',
         'plur_nomn': 'и', 'plur_gent': 'ей', 'plur_datv': 'ям', 'plur_accs': 'и',
         'plur_ablt': 'ями', 'plur_loct': 'ях'}},
+    'adj_hard_oy': {'stem_suffix': 'ой', 'endings': {
+        'nomn_masc': 'ой', 'nomn_femn': 'ая', 'nomn_neut': 'ое', 'nomn_plur': 'ые',
+        'gent_masc': 'ого', 'gent_femn': 'ой', 'gent_plur': 'ых',
+        'datv_masc': 'ому', 'datv_femn': 'ой', 'datv_plur': 'ым',
+        'accs_masc': 'ой', 'accs_femn': 'ую', 'accs_neut': 'ое', 'accs_plur': 'ые',
+        'ablt_masc': 'ым', 'ablt_femn': 'ой', 'ablt_plur': 'ыми',
+        'loct_masc': 'ом', 'loct_femn': 'ой', 'loct_plur': 'ых'}},
     'adj_hard': {'stem_suffix': 'ый', 'endings': {
         'nomn_masc': 'ый', 'nomn_femn': 'ая', 'nomn_neut': 'ое', 'nomn_plur': 'ые',
         'gent_masc': 'ого', 'gent_femn': 'ой', 'gent_plur': 'ых',
@@ -93,6 +100,8 @@ class SlangMorph:
             return 'adj_sk'
         if w.endswith('ый'):
             return 'adj_hard'
+        if w.endswith('ой'):
+            return 'adj_hard_oy'
         if w.endswith('ий'):
             return 'adj_soft'
         if w.endswith(('ость', 'есть', 'ность', 'мость')):
@@ -270,7 +279,9 @@ class SlangMorph:
         add(w, 'инф.')
 
         p = morph.parse(w)[0]
-        pymorphy_confident = p.score >= 0.7 and p.tag.POS in ('INFN', 'VERB')
+        # Доверяем pymorphy3 только если он ЗНАЕТ слово (словарное)
+        # Для сленга вид определяется неверно → всегда эвристика
+        pymorphy_confident = p.is_known and p.score >= 0.7 and p.tag.POS in ('INFN', 'VERB')
 
         if pymorphy_confident:
             for tense, tense_lbl in [('pres', 'наст.'), ('futr', 'буд.')]:
@@ -402,13 +413,33 @@ class SlangMorph:
             return s
 
         if conj == 2:
+            # Чередования согласных в 1л ед.ч. (видеть → вижу, возить → вожу)
+            ALTER = {
+                'з': 'ж', 'с': 'ш', 'т': 'ч', 'д': 'ж',
+                'б': 'бл', 'п': 'пл', 'в': 'вл', 'м': 'мл', 'ф': 'фл',
+            }
+            # Убираем конечную гласную стема (чили → чил)
+            if stem and stem[-1] in 'аеёиоуыэюя':
+                alt_stem = stem[:-1]
+            else:
+                alt_stem = stem
+
+            if alt_stem and alt_stem[-1] in ALTER:
+                first_sing = alt_stem[:-1] + ALTER[alt_stem[-1]] + 'у'
+            elif stem[-1] in 'жшчщ':
+                first_sing = stem + 'у'
+            else:
+                first_sing = stem + 'ю'
+
+            # 3л мн: после шипящих + ат, иначе + ят (бадяжить → бадяжат)
+            third_plur = stem + ('ат' if stem[-1] in 'жшчщ' else 'ят')
             forms = {
-                '1per_sing': alter(stem) + 'ю',
+                '1per_sing': first_sing,
                 '2per_sing': stem + 'ишь',
                 '3per_sing': stem + 'ит',
                 '1per_plur': stem + 'им',
                 '2per_plur': stem + 'ите',
-                '3per_plur': stem + 'ят',
+                '3per_plur': third_plur,
             }
         else:
             v = base[-2]
@@ -456,8 +487,13 @@ class SlangMorph:
                 imp_plur = base[:-3] + v + 'йтесь'
         else:
             if conj == 2:
-                imp_sing = base[:-3] + 'и'
-                imp_plur = base[:-3] + 'ите'
+                # чилить → чиль, чильте (не "чили")
+                stem_imp = base[:-3]
+                if stem_imp.endswith(('л', 'р', 'н', 'м', 'б', 'п', 'в', 'ф')):
+                    imp_sing = stem_imp + 'ь'
+                else:
+                    imp_sing = stem_imp + 'и'
+                imp_plur = imp_sing + 'те'
             else:
                 v = base[-2]
                 imp_sing = base[:-3] + v + 'й'

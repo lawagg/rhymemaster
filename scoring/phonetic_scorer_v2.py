@@ -190,6 +190,77 @@ def cluster_bonus(req_cons, cand_cons):
     return min(lcs * WEIGHTS["lcs_per_element"], WEIGHTS["lcs_max"])
 
 
+def find_all_stress_positions_from_end(vowels):
+    """Возвращает ВСЕ позиции ударных гласных с конца (для двухударных)."""
+    positions = []
+    for i, v in enumerate(vowels):
+        if v.get("stressed"):
+            positions.append(len(vowels) - i)
+    if not positions:
+        if len(vowels) == 1:
+            return [1]
+        return []
+    return positions
+
+
+def _score_at_stress_positions(req, cand, req_vowels, cand_vowels, req_pos, cand_pos, mode):
+    """Скоринг для конкретной пары позиций ударения. Возвращает score или None."""
+    req_str_v = None
+    for i, v in enumerate(req_vowels):
+        if v.get("stressed") and (len(req_vowels) - i) == req_pos:
+            req_str_v = v
+            break
+    if req_str_v is None:
+        if req_pos <= len(req_vowels):
+            req_str_v = req_vowels[-req_pos]
+        else:
+            req_str_v = req_vowels[0]
+
+    cand_str_v = None
+    for i, v in enumerate(cand_vowels):
+        if v.get("stressed") and (len(cand_vowels) - i) == cand_pos:
+            cand_str_v = v
+            break
+    if cand_str_v is None:
+        if cand_pos <= len(cand_vowels):
+            cand_str_v = cand_vowels[-cand_pos]
+        else:
+            cand_str_v = cand_vowels[0]
+
+    if get_vowel_class(req_str_v["symbol"]) != get_vowel_class(cand_str_v["symbol"]):
+        return None
+
+    req_stressed_idx = req.index(req_str_v)
+    cand_stressed_idx = cand.index(cand_str_v)
+
+    req_after = [p for p in req[req_stressed_idx + 1:] if p["type"] == "consonant"]
+    cand_after = [p for p in cand[cand_stressed_idx + 1:] if p["type"] == "consonant"]
+    cons_score = align_consonants(req_after, cand_after)
+
+    req_before = [p for p in req[:req_stressed_idx] if p["type"] == "consonant"]
+    cand_before = [p for p in cand[:cand_stressed_idx] if p["type"] == "consonant"]
+    before_w = 0.5 if mode == "B" else 1.0
+    if req_before and cand_before:
+        before_score = align_consonants(req_before, cand_before)
+        cons_score += int(before_score * before_w)
+
+    # Безударные = все гласные кроме выбранной ударной
+    req_unstressed = [v["symbol"] for v in req_vowels if v is not req_str_v]
+    cand_unstressed = [v["symbol"] for v in cand_vowels if v is not cand_str_v]
+    matches = 0
+    for v in req_unstressed:
+        if v in cand_unstressed:
+            matches += 1
+            cand_unstressed.remove(v)
+    unstressed_bonus = min(matches * WEIGHTS["unstressed_vowel_bonus"],
+                           WEIGHTS["unstressed_vowel_max"])
+
+    clust = cluster_bonus(req_after, cand_after)
+
+    total = WEIGHTS["vowel_match"] + cons_score + unstressed_bonus + clust
+    return max(total, 0)
+
+
 def score_phonemes(req_phonemes, cand_phonemes, mode="A"):
     details = {"disqualified": False, "reason": None}
 
@@ -206,79 +277,33 @@ def score_phonemes(req_phonemes, cand_phonemes, mode="A"):
         details["reason"] = "no_vowels"
         return None, details
 
-    req_pos = find_stress_position_from_end(req_vowels)
-    cand_pos = find_stress_position_from_end(cand_vowels)
+    req_positions = find_all_stress_positions_from_end(req_vowels)
+    cand_positions = find_all_stress_positions_from_end(cand_vowels)
 
-    if req_pos is None or cand_pos is None:
+    if not req_positions or not cand_positions:
         details["disqualified"] = True
         details["reason"] = "no_stress"
         return None, details
 
-    if req_pos != cand_pos:
+    best_total = None
+    for rp in req_positions:
+        for cp in cand_positions:
+            total = _score_at_stress_positions(req, cand, req_vowels, cand_vowels, rp, cp, mode)
+            if total is None:
+                continue
+            if best_total is None or total > best_total:
+                best_total = total
+
+    if best_total is None:
         details["disqualified"] = True
-        details["reason"] = "stress_pos"
+        details["reason"] = "no_matching_variant"
         return None, details
 
-    req_str_v = None
-    for v in req_vowels:
-        if v.get("stressed"):
-            req_str_v = v
-            break
-    if req_str_v is None:
-        req_str_v = req_vowels[-req_pos] if req_pos <= len(req_vowels) else req_vowels[0]
-
-    cand_str_v = None
-    for v in cand_vowels:
-        if v.get("stressed"):
-            cand_str_v = v
-            break
-    if cand_str_v is None:
-        cand_str_v = cand_vowels[-cand_pos] if cand_pos <= len(cand_vowels) else cand_vowels[0]
-
-    if get_vowel_class(req_str_v["symbol"]) != get_vowel_class(cand_str_v["symbol"]):
-        details["disqualified"] = True
-        details["reason"] = "vowel_class"
-        return None, details
-
-    req_stressed_idx = req.index(req_str_v)
-    cand_stressed_idx = cand.index(cand_str_v)
-
-    req_after = [p for p in req[req_stressed_idx + 1:] if p["type"] == "consonant"]
-    cand_after = [p for p in cand[cand_stressed_idx + 1:] if p["type"] == "consonant"]
-
-    cons_score = align_consonants(req_after, cand_after)
-
-    req_before = [p for p in req[:req_stressed_idx] if p["type"] == "consonant"]
-    cand_before = [p for p in cand[:cand_stressed_idx] if p["type"] == "consonant"]
-
-    before_w = 0.5 if mode == "B" else 1.0
-    if req_before and cand_before:
-        before_score = align_consonants(req_before, cand_before)
-        cons_score += int(before_score * before_w)
-
-    req_unstressed = [v["symbol"] for v in req_vowels if not v.get("stressed")]
-    cand_unstressed = [v["symbol"] for v in cand_vowels if not v.get("stressed")]
-    matches = 0
-    for v in req_unstressed:
-        if v in cand_unstressed:
-            matches += 1
-            cand_unstressed.remove(v)
-    unstressed_bonus = min(matches * WEIGHTS["unstressed_vowel_bonus"], WEIGHTS["unstressed_vowel_max"])
-
-    clust = cluster_bonus(req_after, cand_after)
-
-    total = WEIGHTS["vowel_match"] + cons_score + unstressed_bonus + clust
-    total = max(total, 0)
-
-    details.update({
-        "vowel_class_match": True,
-        "stress_position_match": True,
-        "consonant_score": cons_score,
-        "unstressed_bonus": unstressed_bonus,
-        "cluster_bonus": clust,
-    })
-    return total, details
-
+    details["vowel_class_match"] = True
+    details["stress_position_match"] = True
+    details["req_stress_variants"] = req_positions
+    details["cand_stress_variants"] = cand_positions
+    return best_total, details
 
 def theoretical_max(req_phonemes, mode="A"):
     req = [dict(p) for p in req_phonemes]

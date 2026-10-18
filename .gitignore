@@ -87,3 +87,7 @@ _tmp_slang/
 prefixes_to_add.txt
 verbs_for_prefixes.txt
 verbs_with_prefixes.txt
+
+# Рабочие файлы глаголов/существительных
+noun_adj_review*.txt
+verbs_*.txt
