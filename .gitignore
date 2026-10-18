@@ -91,3 +91,7 @@ verbs_with_prefixes.txt
 # Рабочие файлы глаголов/существительных
 noun_adj_review*.txt
 verbs_*.txt
+
+# Рабочие файлы причастий
+participles_batch*.txt
+verbs_for_participles.txt
