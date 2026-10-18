@@ -57,3 +57,28 @@ nohup.out
 .env
 *.key
 credentials.json
+
+# Рабочие файлы (промежуточные списки, батчи)
+batch_*.txt
+pos_*.txt
+stress_*.txt
+to_add_*.txt
+unified_*.txt
+v2_*.txt
+phrases_*.txt
+broken_*.txt
+indecl_*.txt
+indeclinable_*.txt
+mat_all_target.txt
+mat_check.txt
+mat_final_*.txt
+mat_from_dict.txt
+mat_full_review.txt
+mat_missing_from_dict.txt
+mat_reviewed.txt
+mat_to_add.txt
+_tmp_slang/
+
+# Копии в корне (основные в scoring/)
+/mat_dictionary_clean.txt
+/rude_dictionary.txt

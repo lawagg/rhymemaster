@@ -11260,7 +11260,11 @@
     "definition": "относящийся к аниме",
     "pos": "прил.",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "отаковский",
+      "аниме-стайл",
+      "мультяшный"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11280,7 +11284,11 @@
     "definition": "автор манги",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "художник манги",
+      "комиксист",
+      "манга-художник"
+    ],
     "era": "2000s",
     "type": "professional"
   },
@@ -11311,7 +11319,11 @@
     "definition": "жанр аниме и манги для юношей, боевик",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "боевик для парней",
+      "юношеская манга",
+      "аниме-боевик"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11320,7 +11332,11 @@
     "definition": "жанр аниме и манги для девушек, романтика",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "девичья манга",
+      "романтика для девушек",
+      "сёдзё-аниме"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11329,7 +11345,11 @@
     "definition": "жанр аниме для взрослой аудитории",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "взрослое аниме",
+      "серьёзная манга",
+      "аниме 18+"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11338,7 +11358,11 @@
     "definition": "жанр аниме для взрослых женщин",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "женская манга",
+      "взрослое сёдзё",
+      "манга для женщин"
+    ],
     "era": "2010s",
     "type": "slang"
   },
@@ -11347,7 +11371,11 @@
     "definition": "аниме и манга для детей",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "детское аниме",
+      "детская манга",
+      "аниме для малышей"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11356,7 +11384,11 @@
     "definition": "серия, не связанная с основным сюжетом",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "заполнитель",
+      "лишняя серия",
+      "неканон"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11398,7 +11430,11 @@
     "definition": "порнографическое аниме или манга",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "порно",
+      "эротическое аниме",
+      "порнография"
+    ],
     "era": "2000s",
     "type": "vulgar"
   },
@@ -11418,7 +11454,11 @@
     "definition": "жанр об отношениях женских персонажей",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "девичья любовь",
+      "лесбийская романтика",
+      "женская пара"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11427,7 +11467,11 @@
     "definition": "жанр с эротизацией мальчиков",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "эротика с мальчиками",
+      "детская эротика",
+      "запретный жанр"
+    ],
     "era": "2000s",
     "type": "vulgar"
   },
@@ -11436,7 +11480,11 @@
     "definition": "жанр с эротизацией девочек или его поклонник",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "эротика с девочками",
+      "детская эротика",
+      "запретный жанр"
+    ],
     "era": "2000s",
     "type": "vulgar"
   },
@@ -11467,7 +11515,11 @@
     "definition": "типаж героини: холодная снаружи, тёплая внутри",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "колючая героиня",
+      "грубая, но милая",
+      "холодная снаружи"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11476,7 +11528,11 @@
     "definition": "типаж: милая снаружи, одержимая внутри",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "одержимая фанатка",
+      "ревнивая одержимость",
+      "влюблённая психопатка"
+    ],
     "era": "2010s",
     "type": "slang"
   },
@@ -11485,7 +11541,11 @@
     "definition": "типаж: молчаливая, эмоционально холодная героиня",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "молчунья",
+      "неэмоциональная девушка",
+      "холодная героиня"
+    ],
     "era": "2010s",
     "type": "slang"
   },
@@ -11494,7 +11554,11 @@
     "definition": "типаж: тихая и застенчивая героиня",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "тихоня",
+      "скромница",
+      "застенчивая героиня"
+    ],
     "era": "2010s",
     "type": "slang"
   },
@@ -11503,7 +11567,11 @@
     "definition": "типаж: открыто влюблённая и ласковая героиня",
     "pos": "сущ.",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "ласковая девушка",
+      "влюблённая героиня",
+      "нежная натура"
+    ],
     "era": "2010s",
     "type": "slang"
   },
@@ -11512,7 +11580,11 @@
     "definition": "модная японская девушка; стиль гяру",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "модница",
+      "токийская тусовщица",
+      "загорелая модница"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11554,7 +11626,11 @@
     "definition": "активная сторона в яой-паре",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "верх",
+      "доминант",
+      "активный партнёр"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11563,7 +11639,11 @@
     "definition": "пассивная сторона в яой-паре",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "низ",
+      "сабмиссив",
+      "пассивный партнёр"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11715,7 +11795,11 @@
     "definition": "стиль рисунка с уменьшенными пропорциями",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "мини-версия",
+      "мультяшные пропорции",
+      "карикатурный стиль"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11724,7 +11808,11 @@
     "definition": "персонаж в чиби-стиле; малыш",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "малыш",
+      "мини-персонаж",
+      "чиби-версия"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11755,7 +11843,11 @@
     "definition": "субкультура поклонников антропоморфных животных",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "антропоморфные животные",
+      "звери-персонажи",
+      "пушистые персонажи"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11786,7 +11878,11 @@
     "definition": "Акихабара, район отаку-культуры в Токио",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "Акихабара",
+      "район отаку",
+      "токийский квартал"
+    ],
     "era": "2010s",
     "type": "slang"
   },
@@ -11806,7 +11902,11 @@
     "definition": "переодеваться в персонажа",
     "pos": "глаг.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "перевоплощаться",
+      "наряжаться персонажем",
+      "играть роль"
+    ],
     "era": "2010s",
     "type": "slang"
   },
@@ -11870,7 +11970,11 @@
     "definition": "любительское произведение по мотивам аниме или книги",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "фанатский рассказ",
+      "сетевая проза",
+      "любительское сочинение"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11879,7 +11983,11 @@
     "definition": "любительский перевод и озвучивание аниме",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "дубляж",
+      "войсовер",
+      "голосовой перевод"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11888,7 +11996,11 @@
     "definition": "жанр романтических игр или аниме для девушек",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "игра для девушек",
+      "визуальная новелла",
+      "романтическая игра"
+    ],
     "era": "2010s",
     "type": "slang"
   },
@@ -11941,7 +12053,11 @@
     "definition": "енотовидная собака; зверь-оборотень из мифологии",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "енотовидная собака",
+      "оборотень",
+      "зверь-маскировщик"
+    ],
     "era": "2010s",
     "type": "slang"
   },
@@ -11950,7 +12066,11 @@
     "definition": "пошлый, развратный (о лёгкой эротике)",
     "pos": "прил.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "пошлый",
+      "развратный",
+      "эротический"
+    ],
     "era": "2000s",
     "type": "vulgar"
   },
@@ -11970,7 +12090,11 @@
     "definition": "сцены для удовольствия фанатов, часто эротические",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "эротические кадры",
+      "приманка для фанатов",
+      "пасхалка для фанатов"
+    ],
     "era": "2010s",
     "type": "slang"
   },
@@ -11979,7 +12103,11 @@
     "definition": "любительская манга, часто по мотивам",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "фанатский комикс",
+      "самодельная манга",
+      "любительская манга"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -11988,7 +12116,11 @@
     "definition": "четырёхклеточная манга или комикс",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "манга в 4 клетки",
+      "короткий комикс",
+      "газетный стрип"
+    ],
     "era": "2010s",
     "type": "slang"
   },
@@ -12008,7 +12140,11 @@
     "definition": "почтительный суффикс к имени, высокий статус",
     "pos": "сущ.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "суффикс уважения",
+      "вежливый титул",
+      "обращение к господину"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -13107,7 +13243,11 @@
     "definition": "подставное лицо в схеме сбыта наркотиков, получающее деньги или посылки",
     "pos": "noun",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "подставное лицо",
+      "курьер-закладчик",
+      "получатель посылок"
+    ],
     "era": "2020s",
     "type": "slang"
   },
@@ -15159,7 +15299,11 @@
     "definition": "разместить провокационное сообщение или дезу",
     "pos": "глаг.",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "подкинуть дезу",
+      "запустить слух",
+      "спровоцировать"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -15443,7 +15587,11 @@
     "definition": "о заголовке: провокационный, ради кликов",
     "pos": "прил.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "приманчивый",
+      "провокационный",
+      "жёлтый"
+    ],
     "era": "2020s",
     "type": "slang"
   },
@@ -15694,7 +15842,11 @@
     "definition": "избыточный поток малополезной информации",
     "pos": "сущ.",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "информационный мусор",
+      "новостной спам",
+      "перегруз новостями"
+    ],
     "era": "2020s",
     "type": "slang"
   },
@@ -15890,7 +16042,11 @@
     "definition": "невидимый режим пребывания в сети",
     "pos": "сущ.",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "режим инкогнито",
+      "скрытый статус",
+      "невидимый режим"
+    ],
     "era": "2000s",
     "type": "slang"
   },
@@ -16017,1846 +16173,2666 @@
   },
   "беспиздая": {
     "group": "мат",
-    "definition": "",
+    "definition": "о женщине: без женских прелестей",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "невзрачная",
+      "плоская",
+      "без изюминки"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "бля": {
     "group": "мат",
-    "definition": "",
+    "definition": "выражает досаду или удивление",
     "pos": "",
     "syllables": 1,
-    "synonyms": [],
+    "synonyms": [
+      "блин",
+      "чёрт",
+      "ёлки-палки"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "проёб": {
     "group": "мат",
-    "definition": "",
+    "definition": "упущенная возможность, провал, неудача",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "провал",
+      "упущение",
+      "облом"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "блядина": {
     "group": "мат",
-    "definition": "",
+    "definition": "распутная женщина, мерзавка",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "шлюха",
+      "стерва",
+      "мерзавка"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "блядки": {
     "group": "мат",
-    "definition": "",
+    "definition": "распутные гулянки, разврат",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "гулянки",
+      "распутство",
+      "разврат"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "блядовать": {
     "group": "мат",
-    "definition": "",
+    "definition": "вести распутный образ жизни",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "гулять",
+      "распутничать",
+      "блудить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "блядский": {
     "group": "мат",
-    "definition": "",
+    "definition": "скверный, отвратительный, проклятый",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "паршивый",
+      "поганый",
+      "проклятый"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "блядство": {
     "group": "мат",
-    "definition": "",
+    "definition": "разврат, распутное поведение",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "разврат",
+      "распутство",
+      "блуд"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "блядун": {
     "group": "мат",
-    "definition": "",
+    "definition": "мужчина, ведущий распутную жизнь",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "бабник",
+      "ловелас",
+      "кобель"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "блядь": {
     "group": "мат",
-    "definition": "",
+    "definition": "распутная женщина; грубое ругательство",
     "pos": "",
     "syllables": 1,
-    "synonyms": [],
+    "synonyms": [
+      "шлюха",
+      "проститутка",
+      "потаскуха"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "взъебнуть": {
     "group": "мат",
-    "definition": "",
+    "definition": "сильно ударить или отругать",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "врезать",
+      "отругать",
+      "огреть"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "впиздить": {
     "group": "мат",
-    "definition": "",
+    "definition": "вставить с силой; ударить",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "всадить",
+      "врезать",
+      "загнать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "впиздиться": {
     "group": "мат",
-    "definition": "",
+    "definition": "врезаться во что-то; вляпаться",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "врезаться",
+      "влететь",
+      "вляпаться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "впиздохать": {
     "group": "мат",
-    "definition": "",
+    "definition": "сильно ударить, вогнать внутрь",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "врезать",
+      "всадить",
+      "вогнать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "впиздохивать": {
     "group": "мат",
-    "definition": "",
+    "definition": "ударять или вгонять с силой",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "всаживать",
+      "вгонять",
+      "вбивать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "впиздохиваться": {
     "group": "мат",
-    "definition": "",
+    "definition": "врезаться или вляпываться во что-то",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "врезаться",
+      "влезать",
+      "вляпываться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "впиздронивать": {
     "group": "мат",
-    "definition": "",
+    "definition": "вставлять или вгонять с усилием",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "вбивать",
+      "вгонять",
+      "всаживать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "впиздрониваться": {
     "group": "мат",
-    "definition": "",
+    "definition": "влезать или врезаться неосторожно",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "вляпываться",
+      "врезаться",
+      "влезать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "впиздюлить": {
     "group": "мат",
-    "definition": "",
+    "definition": "сильно ударить; далеко забросить",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "врезать",
+      "зашвырнуть",
+      "огреть"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "впизживать": {
     "group": "мат",
-    "definition": "",
+    "definition": "ударять; вгонять внутрь с силой",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "вбивать",
+      "вгонять",
+      "лупить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "вхуйнуть": {
     "group": "мат",
-    "definition": "",
+    "definition": "вставить или воткнуть с силой",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "всадить",
+      "воткнуть",
+      "вогнать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "вхуйнуться": {
     "group": "мат",
-    "definition": "",
+    "definition": "с размаху во что-то врезаться",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "врезаться",
+      "вляпаться",
+      "влететь"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "вхуярить": {
     "group": "мат",
-    "definition": "",
+    "definition": "сильно ударить; вогнать внутрь",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "врезать",
+      "всадить",
+      "вогнать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "въебать": {
     "group": "мат",
-    "definition": "",
+    "definition": "сильно ударить; вложить много сил",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "врезать",
+      "ввалить",
+      "вбухать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "въёбывать": {
     "group": "мат",
-    "definition": "",
+    "definition": "усердно и много работать",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "пахать",
+      "вкалывать",
+      "горбатиться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "выблядовать": {
     "group": "мат",
-    "definition": "",
+    "definition": "получить подлостью или хитростью",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "выслужить",
+      "выпросить",
+      "выклянчить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "выблядок": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: подлый, низкий человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "ублюдок",
+      "подлец",
+      "мерзавец"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "выебать": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: отругать или обмануть",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "отругать",
+      "обмануть",
+      "облапошить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "выебонить": {
     "group": "мат",
-    "definition": "",
+    "definition": "покрасоваться, показать себя",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "покрасоваться",
+      "выпендриться",
+      "показать себя"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "выёбываться": {
     "group": "мат",
-    "definition": "",
+    "definition": "вести себя вызывающе, важничать",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "выпендриваться",
+      "важничать",
+      "рисоваться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "выебон": {
     "group": "мат",
-    "definition": "",
+    "definition": "вызывающее поведение, показуха, понты",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "выпендрёж",
+      "показуха",
+      "понты"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "выпиздеть": {
     "group": "мат",
-    "definition": "",
+    "definition": "выругать или отчитать кого-то",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "отругать",
+      "отчитать",
+      "пропесочить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "выхуяривание": {
     "group": "мат",
-    "definition": "",
+    "definition": "выбрасывание или выкидывание чего-либо",
     "pos": "",
     "syllables": 7,
-    "synonyms": [],
+    "synonyms": [
+      "выкидывание",
+      "вышвыривание",
+      "избавление"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "говнобак": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: мерзкий, никчёмный тип",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "говнюк",
+      "ничтожество",
+      "мерзавец"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "говноёб": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: мерзкий, отвратительный человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "говнюк",
+      "мерзавец",
+      "ублюдок"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "голоёбица": {
     "group": "мат",
-    "definition": "",
+    "definition": "крайний беспорядок, неразбериха, хаос",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "хаос",
+      "неразбериха",
+      "бардак"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "доебаться": {
     "group": "мат",
-    "definition": "",
+    "definition": "приставать с мелкими придирками",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "придраться",
+      "пристать",
+      "докопаться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "долбиться": {
     "group": "мат",
-    "definition": "",
+    "definition": "упорно и долго чем-то заниматься",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "упорствовать",
+      "долбить",
+      "биться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "долбоёб": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: глупый, бестолковый человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "дурак",
+      "идиот",
+      "тупица"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "допиздеться": {
     "group": "мат",
-    "definition": "",
+    "definition": "договориться до крупных неприятностей",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "доболтаться",
+      "договориться",
+      "доиграться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "доёбывать": {
     "group": "мат",
-    "definition": "",
+    "definition": "приставать с надоедливыми придирками",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "докапываться",
+      "приставать",
+      "пилить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "дуроёб": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: глупец, дурак, балбес",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "дурак",
+      "глупец",
+      "балбес"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебалка": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: лицо или рот",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "морда",
+      "харя",
+      "рот"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебало": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: лицо, физиономия",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "морда",
+      "харя",
+      "рожа"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "наебалово": {
     "group": "мат",
-    "definition": "",
+    "definition": "обман, мошенничество, развод",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "обман",
+      "развод",
+      "кидалово"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебальник": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: лицо или рот",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "морда",
+      "харя",
+      "рот"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебанат": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: глупый, странный человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "дурак",
+      "чудак",
+      "придурок"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебадей": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: взбалмошный, глуповатый человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "придурок",
+      "чудак",
+      "дурак"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебануть": {
     "group": "мат",
-    "definition": "",
+    "definition": "сильно ударить; выпить спиртного",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "врезать",
+      "треснуть",
+      "выпить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебанько": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: чудак, глупец, дурачок",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "чудак",
+      "дурак",
+      "придурок"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебатория": {
     "group": "мат",
-    "definition": "",
+    "definition": "неразбериха, морока, тяжёлое занятие",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "морока",
+      "неразбериха",
+      "канитель"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебать": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: совершать половой акт",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "трахать",
+      "иметь",
+      "сношать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебашить": {
     "group": "мат",
-    "definition": "",
+    "definition": "сильно бить; усердно работать",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "лупить",
+      "пахать",
+      "вкалывать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебеня": {
     "group": "мат",
-    "definition": "",
+    "definition": "глухие, далёкие, труднодоступные места",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "глухомань",
+      "захолустье",
+      "трущобы"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебистика": {
     "group": "мат",
-    "definition": "",
+    "definition": "заумные, мудрёные рассуждения",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "заумь",
+      "мудрёность",
+      "философия"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебический": {
     "group": "мат",
-    "definition": "",
+    "definition": "чрезмерный, заумный, неподъёмный",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "заумный",
+      "неподъёмный",
+      "чудовищный"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ниебический": {
     "group": "мат",
-    "definition": "",
+    "definition": "превосходящий всякие ожидания",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "невероятный",
+      "огромный",
+      "неслыханный"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "еблан": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: глупец, идиот, дебил",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "дурак",
+      "идиот",
+      "дебил"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебланить": {
     "group": "мат",
-    "definition": "",
+    "definition": "валять дурака, бездельничать",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "бездельничать",
+      "тупить",
+      "лодырничать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебливый": {
     "group": "мат",
-    "definition": "",
+    "definition": "озабоченный, похотливый, блудливый",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "похотливый",
+      "озабоченный",
+      "блудливый"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебля": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: половой акт, совокупление",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "секс",
+      "совокупление",
+      "трах"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "жопный": {
     "group": "мат",
-    "definition": "",
+    "definition": "скверный, неудачный; задний",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "паршивый",
+      "неудачный",
+      "задний"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "заебенить": {
     "group": "мат",
-    "definition": "",
+    "definition": "сделать или соорудить что-то",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "соорудить",
+      "забабахать",
+      "сделать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "заебись": {
     "group": "мат",
-    "definition": "",
+    "definition": "очень хорошо, отлично, класс",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "отлично",
+      "класс",
+      "супер"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "заебцовый": {
     "group": "мат",
-    "definition": "",
+    "definition": "отличный, классный, замечательный",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "классный",
+      "отличный",
+      "клёвый"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "запизденить": {
     "group": "мат",
-    "definition": "",
+    "definition": "забросить далеко; сильно ударить",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "зашвырнуть",
+      "закинуть",
+      "врезать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "запиздить": {
     "group": "мат",
-    "definition": "",
+    "definition": "присвоить, украсть, стащить",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "украсть",
+      "присвоить",
+      "стащить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "запизживать": {
     "group": "мат",
-    "definition": "",
+    "definition": "забирать чужое себе",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "присваивать",
+      "забирать",
+      "отбирать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "траханный": {
     "group": "мат",
-    "definition": "",
+    "definition": "измученный, потрёпанный, усталый",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "потрёпанный",
+      "измученный",
+      "усталый"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "трахать": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: совершать половой акт",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "ебать",
+      "иметь",
+      "сношать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "трахаться": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: заниматься сексом",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "совокупляться",
+      "сношаться",
+      "миловаться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "захуяривать": {
     "group": "мат",
-    "definition": "",
+    "definition": "забрасывать далеко; усердно делать",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "зашвыривать",
+      "закидывать",
+      "загонять"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "захуярить": {
     "group": "мат",
-    "definition": "",
+    "definition": "забросить далеко; сильно ударить",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "зашвырнуть",
+      "закинуть",
+      "врезать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "заёб": {
     "group": "мат",
-    "definition": "",
+    "definition": "придирки, надоедливые приставания",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "придирки",
+      "пилёж",
+      "гнобление"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "злоебучая": {
     "group": "мат",
-    "definition": "",
+    "definition": "крайне вредная, злобная, ядовитая",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "вредная",
+      "злобная",
+      "ядовитая"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "изъебнуться": {
     "group": "мат",
-    "definition": "",
+    "definition": "найти неожиданный выход из положения",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "извернуться",
+      "выкрутиться",
+      "исхитриться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "испиздеться": {
     "group": "мат",
-    "definition": "",
+    "definition": "проболтаться, наговорить лишнего",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "проболтаться",
+      "разболтаться",
+      "наврать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ёб": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубое ругательство; выражение досады",
     "pos": "",
     "syllables": 1,
-    "synonyms": [],
+    "synonyms": [
+      "чёрт",
+      "блин",
+      "ёлки"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "волоёб": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: бездельник, волокитчик, бабник",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "волокитчик",
+      "бездельник",
+      "бабник"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "волоёбина": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: никчёмный, тягомотный человек",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "ничтожество",
+      "тягомотина",
+      "мерзавец"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "волоёбить": {
     "group": "мат",
-    "definition": "",
+    "definition": "бездельничать, тянуть время",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "бездельничать",
+      "тянуть",
+      "прохлаждаться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "волоёбище": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: ленивый, никчёмный человек",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "лентяй",
+      "ничтожество",
+      "бездельник"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "коноёбить": {
     "group": "мат",
-    "definition": "",
+    "definition": "медленно копаться, тянуть время",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "копаться",
+      "медлить",
+      "тянуть"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "косоёбить": {
     "group": "мат",
-    "definition": "",
+    "definition": "отлынивать от работы, бездельничать",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "отлынивать",
+      "сачковать",
+      "бездельничать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "малоебущий": {
     "group": "мат",
-    "definition": "",
+    "definition": "незначительный, никого не волнующий",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "незначительный",
+      "пустяковый",
+      "неважный"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "мозгоёб": {
     "group": "мат",
-    "definition": "",
+    "definition": "тот, кто выносит мозг",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "зануда",
+      "демагог",
+      "мучитель"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "мудоёб": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: глупый, никчёмный человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "дурак",
+      "идиот",
+      "ничтожество"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "наебашить": {
     "group": "мат",
-    "definition": "",
+    "definition": "сильно ударить; много сделать",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "врезать",
+      "налупить",
+      "наделать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "наебенить": {
     "group": "мат",
-    "definition": "",
+    "definition": "сделать что-то в большом объёме",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "наделать",
+      "наворотить",
+      "соорудить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "наебнуть": {
     "group": "мат",
-    "definition": "",
+    "definition": "ударить или обмануть, надуть",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "врезать",
+      "обмануть",
+      "надуть"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздеть": {
     "group": "мат",
-    "definition": "",
+    "definition": "лгать, болтать попусту",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "врать",
+      "болтать",
+      "брехать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздить": {
     "group": "мат",
-    "definition": "",
+    "definition": "красть; сильно бить",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "красть",
+      "воровать",
+      "лупить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуевертеть": {
     "group": "мат",
-    "definition": "",
+    "definition": "делать кое-как, крутиться зря",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "халтурить",
+      "крутиться",
+      "вертеться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуяривать": {
     "group": "мат",
-    "definition": "",
+    "definition": "сильно бить; усердно работать",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "лупить",
+      "вкалывать",
+      "пахать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "наёбка": {
     "group": "мат",
-    "definition": "",
+    "definition": "мелкий обман, хитрость, подвох",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "обман",
+      "хитрость",
+      "подвох"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "наёб": {
     "group": "мат",
-    "definition": "",
+    "definition": "обман, мошенничество, жульничество",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "обман",
+      "развод",
+      "жульничество"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "невъебенный": {
     "group": "мат",
-    "definition": "",
+    "definition": "трудный для осознания, чрезмерный",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "невероятный",
+      "огромный",
+      "необычайный"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "недотрах": {
     "group": "мат",
-    "definition": "",
+    "definition": "сексуальная неудовлетворённость, воздержание",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "неудовлетворённость",
+      "воздержание",
+      "нехватка секса"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "нехуёвый": {
     "group": "мат",
-    "definition": "",
+    "definition": "лучше, чем можно было ожидать",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "неплохой",
+      "хороший",
+      "приличный"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "нихуя": {
     "group": "мат",
-    "definition": "",
+    "definition": "совсем нет, ничего, нисколько",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "ничего",
+      "нисколько",
+      "ни капли"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "объебалово": {
     "group": "мат",
-    "definition": "",
+    "definition": "о ситуации, где человека надули",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "обман",
+      "надувательство",
+      "развод"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "объебательство": {
     "group": "мат",
-    "definition": "",
+    "definition": "о деле, построенном на обмане",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "обман",
+      "мошенничество",
+      "жульничество"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "объебать": {
     "group": "мат",
-    "definition": "",
+    "definition": "обмануть, оставив ни с чем",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "обмануть",
+      "надуть",
+      "объегорить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "объебос": {
     "group": "мат",
-    "definition": "",
+    "definition": "тот, кто обманывает других",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "обманщик",
+      "мошенник",
+      "плут"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "однохуйственно": {
     "group": "мат",
-    "definition": "",
+    "definition": "о результате: никакой разницы нет",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "безразлично",
+      "всё равно",
+      "одинаково"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "остоебал": {
     "group": "мат",
-    "definition": "",
+    "definition": "стал невыносимо надоедливым",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "надоел",
+      "достал",
+      "опостылел"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "остохуеть": {
     "group": "мат",
-    "definition": "",
+    "definition": "надоесть, опротиветь до крайности",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "осточертеть",
+      "опротиветь",
+      "надоесть"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "отхуяривать": {
     "group": "мат",
-    "definition": "",
+    "definition": "наносить удары, отделывать кого-то",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "отбивать",
+      "отделывать",
+      "отрабатывать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "отъебаться": {
     "group": "мат",
-    "definition": "",
+    "definition": "прекратить приставать, оставить в покое",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "отстать",
+      "отвязаться",
+      "отцепиться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "охуевать": {
     "group": "мат",
-    "definition": "",
+    "definition": "приходить в сильное изумление",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "изумляться",
+      "обалдевать",
+      "фигеть"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "охуенный": {
     "group": "мат",
-    "definition": "",
+    "definition": "очень хороший, вызывающий восторг",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "отличный",
+      "потрясающий",
+      "классный"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "охуительный": {
     "group": "мат",
-    "definition": "",
+    "definition": "вызывающий сильное восхищение",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "восхитительный",
+      "потрясающий",
+      "классный"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "охуячивать": {
     "group": "мат",
-    "definition": "",
+    "definition": "сильно ударять; ловко делать",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "лупить",
+      "делать",
+      "врезать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "охуячить": {
     "group": "мат",
-    "definition": "",
+    "definition": "сильно ударить; неожиданно сделать",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "врезать",
+      "сделать",
+      "забабахать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "очко": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: задний проход; сильный страх",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "задница",
+      "страх",
+      "испуг"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "переебать": {
     "group": "мат",
-    "definition": "",
+    "definition": "переделать заново; сильно избить",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "переделать",
+      "переиграть",
+      "избить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "перепих": {
     "group": "мат",
-    "definition": "",
+    "definition": "быстрый, недолгий половой акт",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "перепихон",
+      "быстрый секс",
+      "перепихушка"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "перепихнуться": {
     "group": "мат",
-    "definition": "",
+    "definition": "быстро заняться сексом",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "переспать",
+      "согрешить",
+      "совокупиться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "перепихон": {
     "group": "мат",
-    "definition": "",
+    "definition": "недолгая интимная связь",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "интрижка",
+      "перепих",
+      "связь"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "перехуяривать": {
     "group": "мат",
-    "definition": "",
+    "definition": "переделывать заново; перебивать",
     "pos": "",
     "syllables": 6,
-    "synonyms": [],
+    "synonyms": [
+      "переделывать",
+      "переигрывать",
+      "перебивать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "перехуярить": {
     "group": "мат",
-    "definition": "",
+    "definition": "переделать; перебить кого-то",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "переделать",
+      "переиграть",
+      "перебить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пизда": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: женский половой орган",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "вульва",
+      "вагина",
+      "манда"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздабол": {
     "group": "мат",
-    "definition": "",
+    "definition": "болтун, врун, пустобрёх",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "болтун",
+      "врун",
+      "трепло"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздануть": {
     "group": "мат",
-    "definition": "",
+    "definition": "сильно ударить; ляпнуть лишнее",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "врезать",
+      "ляпнуть",
+      "треснуть"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздатый": {
     "group": "мат",
-    "definition": "",
+    "definition": "отличный, классный, клёвый",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "классный",
+      "отличный",
+      "клёвый"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздаёб": {
     "group": "мат",
-    "definition": "",
+    "definition": "болтун, пустобрёх, трепло",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "болтун",
+      "трепло",
+      "пустобрёх"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пизделякать": {
     "group": "мат",
-    "definition": "",
+    "definition": "идти мелким шагом, семенить",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "семенить",
+      "трусить",
+      "плестись"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздец": {
     "group": "мат",
-    "definition": "",
+    "definition": "полный крах, катастрофа, конец",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "крах",
+      "катастрофа",
+      "конец"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздецкий": {
     "group": "мат",
-    "definition": "",
+    "definition": "ужасный, кошмарный, крайне тяжёлый",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "ужасный",
+      "кошмарный",
+      "тяжёлый"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздобрат": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо-шутливо: закадычный друг",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "друг",
+      "кореш",
+      "братан"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздобратия": {
     "group": "мат",
-    "definition": "",
+    "definition": "компания друзей, братия, ватага",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "компания",
+      "братия",
+      "ватага"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздовать": {
     "group": "мат",
-    "definition": "",
+    "definition": "быстро и уверенно шагать",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "идти",
+      "шагать",
+      "топать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздовладелец": {
     "group": "мат",
-    "definition": "",
+    "definition": "шутливо: мужчина при женщине",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "кавалер",
+      "ухажёр",
+      "мужик"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздолёт": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранно-шутливо: ветреная, вертлявая особа",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "вертушка",
+      "ветреница",
+      "непоседа"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздолиз": {
     "group": "мат",
-    "definition": "",
+    "definition": "тот, кто льстит ради выгоды",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "подхалим",
+      "льстец",
+      "подлиза"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздомания": {
     "group": "мат",
-    "definition": "",
+    "definition": "неуёмное влечение к женщинам",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "похоть",
+      "озабоченность",
+      "блуд"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздопляска": {
     "group": "мат",
-    "definition": "",
+    "definition": "беспорядочное веселье, гулянка, разврат",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "гулянка",
+      "разврат",
+      "суета"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздорванец": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: мерзавец, негодяй, подлец",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "мерзавец",
+      "негодяй",
+      "подлец"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздострадалец": {
     "group": "мат",
-    "definition": "",
+    "definition": "нытик, страдающий по пустякам",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "нытик",
+      "страдалец",
+      "плакса"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздострадание": {
     "group": "мат",
-    "definition": "",
+    "definition": "преувеличенные страдания, нытьё, жалость",
     "pos": "",
     "syllables": 6,
-    "synonyms": [],
+    "synonyms": [
+      "нытьё",
+      "страдания",
+      "жалость к себе"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздохуй": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: никчёмный, вздорный человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "ничтожество",
+      "мерзавец",
+      "дурак"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздошить": {
     "group": "мат",
-    "definition": "",
+    "definition": "болтать без умолку, трепаться",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "болтать",
+      "трепаться",
+      "чесать языком"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздоёбищность": {
     "group": "мат",
-    "definition": "",
+    "definition": "крайняя нелепость, вздорность, абсурд",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "нелепость",
+      "абсурд",
+      "вздор"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздрик": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: маленький, ничтожный человек",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "малявка",
+      "ничтожество",
+      "шкет"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздун": {
     "group": "мат",
-    "definition": "",
+    "definition": "тот, кто много и попусту врёт",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "болтун",
+      "врун",
+      "трепло"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздюли": {
     "group": "мат",
-    "definition": "",
+    "definition": "удары, тумаки, полученные за провинность",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "тумаки",
+      "побои",
+      "оплеухи"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздюля": {
     "group": "мат",
-    "definition": "",
+    "definition": "тумак, удар, затрещина",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "тумак",
+      "оплеуха",
+      "затрещина"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздюхать": {
     "group": "мат",
-    "definition": "",
+    "definition": "идти мелкими шажками, семенить",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "семенить",
+      "трусить",
+      "шлёпать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пиздёныш": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: маленький негодник, мерзавец",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "негодник",
+      "мерзавец",
+      "шкет"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебнуть": {
     "group": "мат",
-    "definition": "",
+    "definition": "ударить; выпить спиртного",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "врезать",
+      "треснуть",
+      "выпить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ёбка": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: половой акт, ебля",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "секс",
+      "трах",
+      "ебля"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "подъебнуть": {
     "group": "мат",
-    "definition": "",
+    "definition": "слегка подшутить над кем-то",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "поддеть",
+      "подколоть",
+      "подшутить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "подъёбывать": {
     "group": "мат",
-    "definition": "",
+    "definition": "подшучивать, подкалывать, задирать",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "подкалывать",
+      "подшучивать",
+      "задирать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "поебать": {
     "group": "мат",
-    "definition": "",
+    "definition": "быть безразличным, всё равно",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "наплевать",
+      "безразлично",
+      "плевать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "поебень": {
     "group": "мат",
-    "definition": "",
+    "definition": "ерунда, чепуха, что-то никчёмное",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "ерунда",
+      "чепуха",
+      "хрень"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "похуй": {
     "group": "мат",
-    "definition": "",
+    "definition": "о полном безразличии к чему-то",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "безразлично",
+      "наплевать",
+      "всё равно"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "похую": {
     "group": "мат",
-    "definition": "",
+    "definition": "безразлично, всё равно, плевать",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "всё равно",
+      "безразлично",
+      "наплевать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "проблядь": {
     "group": "мат",
-    "definition": "",
+    "definition": "распутная женщина; грубое ругательство",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "шлюха",
+      "потаскуха",
+      "блядь"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "проебать": {
     "group": "мат",
-    "definition": "",
+    "definition": "потерять, упустить, провалить",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "потерять",
+      "упустить",
+      "просрать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "пёзды": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: женские половые органы",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "вульва",
+      "вагина",
+      "манда"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "разъебай": {
     "group": "мат",
-    "definition": "",
+    "definition": "разгильдяй, безалаберный, неряшливый человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "разгильдяй",
+      "безалаберный",
+      "неряха"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "разъебать": {
     "group": "мат",
-    "definition": "",
+    "definition": "разломать на части, уничтожить",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "разбить",
+      "разнести",
+      "разрушить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "разёбанный": {
     "group": "мат",
-    "definition": "",
+    "definition": "разбитый, разрушенный; расхлябанный",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "разбитый",
+      "разрушенный",
+      "расхлябанный"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "распиздон": {
     "group": "мат",
-    "definition": "",
+    "definition": "полный беспорядок, развал, бардак",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "беспорядок",
+      "развал",
+      "бардак"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "распиздошить": {
     "group": "мат",
-    "definition": "",
+    "definition": "разнести, разгромить, разрушить",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "разгромить",
+      "разнести",
+      "разрушить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "распиздяй": {
     "group": "мат",
-    "definition": "",
+    "definition": "разгильдяй, раззява, необязательный человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "разгильдяй",
+      "раззява",
+      "неряха"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "распиздяйство": {
     "group": "мат",
-    "definition": "",
+    "definition": "небрежность в делах и обещаниях",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "разгильдяйство",
+      "безалаберность",
+      "небрежность"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "расхуяривать": {
     "group": "мат",
-    "definition": "",
+    "definition": "разбивать, громить, расшвыривать",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "громить",
+      "разбивать",
+      "расшвыривать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "скотоёб": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: грубый, низкий человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "скот",
+      "мерзавец",
+      "хам"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "скотоёбина": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: мерзкий, грубый человек",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "мерзавец",
+      "скот",
+      "подлец"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "страхоёбище": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: очень страшный человек",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "урод",
+      "страшила",
+      "монстр"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "съебаться": {
     "group": "мат",
-    "definition": "",
+    "definition": "убежать, убраться, исчезнуть",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "убежать",
+      "свалить",
+      "исчезнуть"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "трепездон": {
     "group": "мат",
-    "definition": "",
+    "definition": "пустая болтовня, трёп, пустословие",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "болтовня",
+      "трёп",
+      "пустословие"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "трепездонить": {
     "group": "мат",
-    "definition": "",
+    "definition": "болтать попусту, трепаться, пустословить",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "болтать",
+      "трепаться",
+      "пустословить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "тупиздень": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: глупый, туповатый человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "тупица",
+      "дурак",
+      "глупец"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "уёбище": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: мерзкий, уродливый человек",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "урод",
+      "мерзавец",
+      "ничтожество"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "уёбищный": {
     "group": "мат",
-    "definition": "",
+    "definition": "вызывающий отвращение, крайне плохой",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "отвратительный",
+      "уродливый",
+      "мерзкий"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "уёбок": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: подлый, низкий человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "подлец",
+      "мерзавец",
+      "ублюдок"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "уёбывать": {
     "group": "мат",
-    "definition": "",
+    "definition": "уходить, сваливать, убираться прочь",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "уходить",
+      "сваливать",
+      "убираться"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебаный": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: проклятый, скверный, дурацкий",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "проклятый",
+      "дурацкий",
+      "чёртов"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ёбаный": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: проклятый, надоевший, чёртов",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "проклятый",
+      "чёртов",
+      "надоевший"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хитровыебанный": {
     "group": "мат",
-    "definition": "",
+    "definition": "устроенный слишком замысловато",
     "pos": "",
     "syllables": 6,
-    "synonyms": [],
+    "synonyms": [
+      "замысловатый",
+      "хитроумный",
+      "мудрёный"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуёво": {
     "group": "мат",
-    "definition": "",
+    "definition": "о состоянии: очень плохо, скверно",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "плохо",
+      "скверно",
+      "паршиво"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуево": {
     "group": "мат",
-    "definition": "",
+    "definition": "о самочувствии или делах: плохо",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "плохо",
+      "неважно",
+      "скверно"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуеглот": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: никчёмный, подлый человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "подлец",
+      "ничтожество",
+      "мерзавец"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуегрыз": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: вздорный, сварливый человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "сварливый",
+      "вздорный",
+      "зануда"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуеплёт": {
     "group": "мат",
-    "definition": "",
+    "definition": "болтун, врун, пустобрёх",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "болтун",
+      "врун",
+      "трепло"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуепутало": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: путаник, бестолковый человек",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "путаник",
+      "бестолочь",
+      "растяпа"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуесос": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо-бранное: ничтожный человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "ничтожество",
+      "подлец",
+      "мерзавец"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуила": {
     "group": "мат",
-    "definition": "",
+    "definition": "бранное: никчёмный, пустой человек",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "ничтожество",
+      "мерзавец",
+      "дурак"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуй": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: мужской половой орган",
     "pos": "",
     "syllables": 1,
-    "synonyms": [],
+    "synonyms": [
+      "член",
+      "пенис",
+      "орган"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуйня": {
     "group": "мат",
-    "definition": "",
+    "definition": "ерунда, чепуха, бессмыслица",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "ерунда",
+      "чепуха",
+      "хрень"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуяк": {
     "group": "мат",
-    "definition": "",
+    "definition": "выражает неожиданное действие, бац",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "бац",
+      "хлоп",
+      "раз"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуярить": {
     "group": "мат",
-    "definition": "",
+    "definition": "сильно бить; усердно работать",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "лупить",
+      "вкалывать",
+      "пахать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуец": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо-уменьш.: мужской половой орган",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "член",
+      "пенис",
+      "отросток"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуёвина": {
     "group": "мат",
-    "definition": "",
+    "definition": "странная штуковина, ерунда",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "штуковина",
+      "ерунда",
+      "хрень"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуёвничать": {
     "group": "мат",
-    "definition": "",
+    "definition": "вести себя скверно, халтурить",
     "pos": "",
     "syllables": 4,
-    "synonyms": [],
+    "synonyms": [
+      "халтурить",
+      "филонить",
+      "безобразничать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "хуёвый": {
     "group": "мат",
-    "definition": "",
+    "definition": "о качестве: очень плохой, скверный",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "плохой",
+      "скверный",
+      "паршивый"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ебака": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: любитель плотских утех",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "ходок",
+      "ловелас",
+      "бабник"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ёбля": {
     "group": "мат",
-    "definition": "",
+    "definition": "грубо: половой акт, совокупление",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "секс",
+      "трах",
+      "ебля"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ёбнуть": {
     "group": "мат",
-    "definition": "",
+    "definition": "ударить; выпить спиртного",
     "pos": "",
     "syllables": 2,
-    "synonyms": [],
+    "synonyms": [
+      "врезать",
+      "треснуть",
+      "выпить"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "ёбнутый": {
     "group": "мат",
-    "definition": "",
+    "definition": "помешанный, чокнутый, странный",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "чокнутый",
+      "придурковатый",
+      "безумный"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "шароёбиться": {
     "group": "мат",
-    "definition": "",
+    "definition": "болтаться без дела, слоняться",
     "pos": "",
     "syllables": 5,
-    "synonyms": [],
+    "synonyms": [
+      "слоняться",
+      "болтаться",
+      "шататься"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "впиздячить": {
     "group": "мат",
-    "definition": "",
+    "definition": "вставить, вогнать; сильно ударить",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "всадить",
+      "вогнать",
+      "врезать"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
   "яйценос": {
     "group": "жаргон",
-    "definition": "",
+    "definition": "бранно-шутливо: мужчина, самец",
     "pos": "",
     "syllables": 3,
-    "synonyms": [],
+    "synonyms": [
+      "мужик",
+      "самец",
+      "производитель"
+    ],
     "era": "unknown",
     "type": "vulgar"
   },
