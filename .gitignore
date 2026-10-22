@@ -95,3 +95,13 @@ verbs_*.txt
 # Рабочие файлы причастий
 participles_batch*.txt
 verbs_for_participles.txt
+
+# Рабочие файлы новой базы
+stress_manual*.txt
+missing_in_accents.txt
+navec_mismatches.txt
+aforizmy_*.txt
+krylatye_clean.json
+*_review.txt
+*_approved.txt
+phrases_*.json
