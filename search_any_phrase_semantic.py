@@ -6,20 +6,17 @@ import silero_stress
 from ruphon import RUPhon
 from ipa_to_ascii import IpaToAscii
 from test_phrase_rhymes import phrase_info, score_phrase_match
-from gensim.models import KeyedVectors
 
 BASE = Path.home() / "models"
 INDEX = BASE / "phrases_index.jsonl"
-VECTORS = BASE / "phrases_vectors.json"
-NAVEC = BASE / "navec_gensim.kv"
+VECTORS = BASE / "phrases_vectors.json" # ВОЗВРАЩАЕМ СТАРЫЕ ВЕКТОРЫ (СИНОНИМЫ)
 
 print("Загружаем модели...", flush=True)
 accentor = silero_stress.load_accentor()
 phonemizer = RUPhon().load("small", workdir="./models", device="CPU")
 conv = IpaToAscii()
-navec = KeyedVectors.load(str(NAVEC))
 
-print("Загружаем базу и векторы...", flush=True)
+print("Загружаем базу и векторы (синонимы)...", flush=True)
 index = {}
 with open(INDEX, encoding="utf-8") as f:
     for line in f:
@@ -71,7 +68,7 @@ def search_phrase(query_text, topn=10):
     
     results = []
     for cand, entry in index.items():
-        if cand == query_text: continue  # ИСКЛЮЧАЕМ САМУ ФРАЗУ
+        if cand == query_text: continue 
         
         c_info = phrase_info(entry["phonemes"])
         if not c_info: continue
@@ -81,13 +78,13 @@ def search_phrase(query_text, topn=10):
         
         total, pct = res
         
-        # Семантический фильтр
+        # Семантический фильтр на синонимах
         sem_sim = None
         if q_vec:
             c_vec = phrase_vectors.get(cand)
             if c_vec:
                 sem_sim = cosine_sim(q_vec, c_vec)
-                if sem_sim < 0.40:  # ПОДНЯЛИ ПОРОГ
+                if sem_sim < 0.40: # Порог 0.40
                     continue
                     
         results.append((cand, total, pct, entry["ascii"], sem_sim))
